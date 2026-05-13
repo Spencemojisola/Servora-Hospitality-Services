@@ -27,6 +27,33 @@
             padding: 0 1rem;
         }
 
+        /* ── Section Toggle Buttons ── */
+        .section-toggle-bar {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .section-toggle-btn {
+            background: #fff;
+            color: #2d6cdf;
+            border: 2px solid #2d6cdf;
+            border-radius: 6px;
+            padding: 0.6rem 1.4rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .section-toggle-btn.active,
+        .section-toggle-btn:hover {
+            background: #2d6cdf;
+            color: #fff;
+        }
+
+        /* ── Event List ── */
         .event-list {
             display: flex;
             flex-direction: column;
@@ -47,112 +74,60 @@
             box-shadow: 0 4px 16px rgba(44, 62, 80, 0.16);
         }
 
+        /* Completed card gets green left border */
+        .event-card.completed {
+            border-left-color: #28a745;
+        }
+
         .event-title {
             font-size: 1.4rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
             color: #2d6cdf;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
         }
 
-        .event-summary-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
+        /* ── Status Badge ── */
+        .status-badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.2rem 0.7rem;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            vertical-align: middle;
         }
 
-        .event-summary-table th {
-            text-align: left;
-            padding: 0.5rem 0.75rem;
-            border-bottom: 1px solid #f0f0f0;
-            font-size: 1rem;
-        }
-        .event-summary-table td {
-            text-align: left;
-            padding: 0.5rem 0.75rem;
-            border-bottom: 1px solid #f0f0f0;
-            font-size: 1rem;
+        .status-badge.upcoming {
+            background: #e8f0fe;
+            color: #2d6cdf;
         }
 
-        .event-summary-table th {
-            width: 180px;
-            color: #555;
-            font-weight: 500;
-            background: #f8fafc;
+        .status-badge.completed {
+            background: #d4edda;
+            color: #28a745;
         }
 
-        .event-summary-table td {
-            color: #222;
+        .status-badge.tbd {
+            background: #fff3cd;
+            color: #856404;
         }
 
-        .view-details-btn {
-            background: #2d6cdf;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            padding: 0.5rem 1.2rem;
-            font-size: 1rem;
-            cursor: pointer;
-            margin-top: 1rem;
-            margin-right: 0.5rem;
-            transition: background 0.2s;
-        }
-        .interest-btn {
-            background: #2d6cdf;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            padding: 0.5rem 1.2rem;
-            font-size: 1rem;
-            cursor: pointer;
-            margin-top: 1rem;
-            margin-right: 0.5rem;
-            transition: background 0.2s;
-        }
-        .interest-btn-no {
-            background: red;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            padding: 0.5rem 1.2rem;
-            font-size: 1rem;
-            cursor: pointer;
-            margin-top: 1rem;
-            margin-right: 0.5rem;
-            transition: background 0.2s;
-        }
-         .interest-btn-noo {
-            background: red;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            padding: 0.5rem 1.2rem;
-            font-size: 1rem;
-            cursor: pointer;
-            margin-top: 1rem;
-            margin-right: 0.5rem;
-            transition: background 0.2s;
-        }
-
-        .view-details-btn:hover {
-             background: #1b4fa0;
-        }
-        .interest-btn:hover {
-            background: #1b4fa0;
-        }
-
+        /* ── Tables ── */
+        .event-summary-table,
         .event-details-table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 1rem;
-            animation: fadeIn 0.3s;
         }
 
-        .event-details-table th {
-            text-align: left;
-            padding: 0.5rem 0.75rem;
-            border-bottom: 1px solid #f0f0f0;
-            font-size: 1rem;
-        }
+        .event-summary-table th,
+        .event-summary-table td,
+        .event-details-table th,
         .event-details-table td {
             text-align: left;
             padding: 0.5rem 0.75rem;
@@ -160,6 +135,7 @@
             font-size: 1rem;
         }
 
+        .event-summary-table th,
         .event-details-table th {
             width: 180px;
             color: #555;
@@ -167,8 +143,57 @@
             background: #f8fafc;
         }
 
+        .event-summary-table td,
         .event-details-table td {
             color: #222;
+        }
+
+        /* ── Buttons ── */
+        .view-details-btn,
+        .interest-btn,
+        .feedback-btn {
+            background: #2d6cdf;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 0.5rem 1.2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            margin-right: 0.5rem;
+            transition: background 0.2s;
+        }
+
+        .feedback-btn {
+            background: #28a745;
+        }
+
+        .feedback-btn:hover {
+            background: #1e7e34;
+        }
+
+        .interest-btn-no,
+        .interest-btn-noo {
+            background: red;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 0.5rem 1.2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            margin-right: 0.5rem;
+            transition: background 0.2s;
+        }
+
+        .view-details-btn:hover,
+        .interest-btn:hover {
+            background: #1b4fa0;
+        }
+
+        /* ── Interest Form ── */
+        .event-details {
+            animation: fadeIn 0.3s;
         }
 
         .interest-section {
@@ -221,10 +246,119 @@
             background: #1b4fa0;
         }
 
+        /* ── Feedback / Review Form ── */
+        .feedback-form-wrapper {
+            background: #f0fdf4;
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            padding: 1.2rem;
+            margin-top: 1rem;
+            max-width: 480px;
+            animation: fadeIn 0.3s;
+        }
+
+        .feedback-form-wrapper h3 {
+            margin: 0 0 1rem;
+            color: #28a745;
+            font-size: 1.1rem;
+        }
+
+        .feedback-form-wrapper label {
+            display: block;
+            margin-bottom: 0.3rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .feedback-form-wrapper input[type="text"],
+        .feedback-form-wrapper textarea,
+        .feedback-form-wrapper select {
+            width: 100%;
+            padding: 0.45rem 0.6rem;
+            margin-bottom: 0.9rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            font-family: inherit;
+            resize: vertical;
+        }
+
+        .feedback-form-wrapper textarea {
+            min-height: 90px;
+        }
+
+        .feedback-form-wrapper button[type="submit"] {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 0.5rem 1.4rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .feedback-form-wrapper button[type="submit"]:hover {
+            background: #1e7e34;
+        }
+
+        /* ── Star Rating ── */
+        .star-rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            gap: 4px;
+            margin-bottom: 0.9rem;
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            font-size: 2rem;
+            color: #ccc;
+            cursor: pointer;
+            transition: color 0.15s;
+            margin-bottom: 0 !important;
+            font-weight: normal !important;
+        }
+
+        .star-rating input:checked ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #f5a623;
+        }
+
+        /* ── Success Message ── */
         .success-message {
             color: #218838;
             margin-top: 0.5rem;
             font-weight: 500;
+        }
+
+        /* ── Empty State ── */
+        .empty-state {
+            text-align: center;
+            color: #888;
+            padding: 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* ── Section Header ── */
+        .section-header {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2d6cdf;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e8f0fe;
+        }
+
+        .section-header.past {
+            color: #28a745;
+            border-bottom-color: #d4edda;
         }
 
         @keyframes fadeIn {
@@ -248,11 +382,13 @@
                 padding: 1rem;
             }
 
-            .event-summary-table th {
-                width: 120px;
-            }
+            .event-summary-table th,
             .event-details-table th {
                 width: 120px;
+            }
+
+            .section-toggle-bar {
+                flex-direction: column;
             }
         }
     </style>
@@ -260,194 +396,299 @@
 
 <body>
     <header>
-        <h1>Staff Dashboard: Upcoming Events</h1>
+        <h1>Staff Dashboard: Events</h1>
         <p>Exclusive event details for S.H.S staff</p>
     </header>
+
     <div class="container">
-        <div class="event-list">
 
-            
-            <div class="event-card">
-                <div class="event-title">Upcoming Event</div>
-                <table class="event-summary-table">
-                    <tr>
-                        <th>Location</th>
-                        <td>IBADAN</td>
-                    </tr>
-                    <tr>
-                        <th>Venue</th>
-                        <td>JOGOR CENTRE - HALL OF GRACE</td>
-                    </tr>
-                    <tr>
-                        <th>Date</th>
-                        <td>May 09, 2026</td>
-                    </tr>
-                </table>
-                <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
-                <div class="event-details" style="display:none;">
-                    <table class="event-details-table">
-                        <tr>
-                            <th>Amount</th>
-                            <td>₦7,000 (transport allowance inclusive)</td>
-                        </tr>
-                        <tr>
-                            <th>Dress Code</th>
-                            <td>Top(white-shirt), bottom(black trouser), shoes(black/white sneakers/ black flat shoes)</td>
-                        </tr>
-                        <tr>
-                            <th>Expected Time of Arrival</th>
-                            <td>09:00 AM</td>
-                        </tr>
-                        <tr>
-                            <th>Meeting Point</th>
-                            <td>JOGOR CENTRE -HALL OF GRACE</td>
-                        </tr>
-                        <tr>
-                            <th>Event Type</th>
-                            <td>Birthday</td>
-                        </tr>
-                        <tr>
-                            <th>Job Type</th>
-                            <td>Event Server</td>
-                        </tr>
-                        <tr>
-                            <th>Job Description</th>
-                            <td>Serve food to guests in a polite and professional
-                                manner. Responsibilities include replenishing food as needed, clearing used dishes
-                                from tables, maintaining cleanliness around dining areas,
-                                adhering to food safety standards, and coordinating with the
-                                catering team to ensure smooth and timely service. A neat
-                                appearance and excellent customer service attitude is required
-                                throughout the event.</td>
-                        </tr>
-                        <tr>
-                            <th>Number of Staff Needed</th>
-                            <td>20</td>
-                        </tr>
-                         <tr>
-                            <th>Please Note</th>
-                            <td>Slot fills up quickly, it on first come first served basis. Also preference will be given to people who lives at proximity to the event location.</td>
-                        </tr>
-                    </table>
-                    <div class="interest-section">
-                        <div class="interest-options">
-                            <span>Are you interested?</span>
-                            <button class="interest-btn" onclick="showInterestForm(this, true)">Yes</button>
-                            <button class="interest-btn-no" onclick="showInterestForm(this, false)">No</button>
-                        </div>
-                        
-
-                        <form class="interest-form" style="display:none;" onsubmit="submitInterestForm(event, this)">
-                            <input type="hidden" name="Event" value="Birthday"> 
-                            <label>Full Name</label>
-                            <input type="text" name="FullName" required>
-                            <label>Address</label>
-                            <input type="text" name="Address" required>
-                            <button type="submit">Submit</button>
-                            <div class="success-message" style="display:none;">
-                                Thank you! Your interest has been sent to the admin.
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            
-
-            <div class="event-card">
-                <div class="event-title">Upcoming Event</div>
-                <table class="event-summary-table">
-                    <tr>
-                        <th>Location</th>
-                        <td>to be determined</td>
-                    </tr>
-                    <tr>
-                        <th>to be determined</th>
-                        <td>coming soon</td>
-                    </tr>
-                    <tr>
-                        <th>to be determined</th>
-                        <td>to be determined</td>
-                    </tr>
-                    <tr>
-                        <th>Time</th>
-                        <td>soon</td>
-                    </tr>
-                </table>
-                <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
-                <div class="event-details" style="display:none;">
-                    <table class="event-details-table">
-                        <tr>
-                            <th>Amount</th>
-                            <td>to be determined</td>
-                        </tr>
-                        <tr>
-                            <th>Dress Code</th>
-                            <td>to be determined</td>
-                        </tr>
-                        <tr>
-                            <th>Expected Time of Arrival</th>
-                            <td>to be communicated</td>
-                        </tr>
-                        <tr>
-                            <th>Meeting Point</th>
-                            <td>coming soon</td>
-                        </tr>
-                        <tr>
-                            <th>Event Type</th>
-                            <td>coming soon</td>
-                        </tr>
-                        <tr>
-                            <th>Job Type</th>
-                            <td>coming soon</td>
-                        </tr>
-                        <tr>
-                            <th>Job Description</th>
-                            <td>....</td>
-                        </tr>
-                        <tr>
-                            <th>Number of Staff Needed</th>
-                            <td>not yet specified</td>
-                        </tr>
-                    </table>
-                    <div class="interest-section">
-                        <div class="interest-options">
-                            <span>Are you interested?</span>
-                            <button class="interest-btn" onclick="showInterestForm(this, true)">Yes</button>
-                            <button class="interest-btn-noo" onclick="showInterestForm(this, false)">No</button>
-                        </div>
-                        <form class="interest-form" style="display:none;" onsubmit="submitInterestForm(event, this)">
-                            <input type="hidden" name="Event" value="Annual Sports Festival">
-                            <label>Full Name</label>
-                            <input type="text" name="FullName" required>
-                            <label>Address</label>
-                            <input type="text" name="Address" required>
-                            <button type="submit">Submit</button>
-                            <div class="success-message" style="display:none;">
-                                Thank you! Your interest has been sent to the admin.
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
+        <!-- ── Section Toggle Bar ── -->
+        <div class="section-toggle-bar">
+            <button class="section-toggle-btn active" onclick="showSection('upcoming', this)">
+                📅 Upcoming Events
+            </button>
+            <button class="section-toggle-btn" onclick="showSection('past', this)">
+                🏁 Past Events & Reviews
+            </button>
         </div>
-    </div>
+
+        <!-- ════════════════════════════
+             UPCOMING EVENTS SECTION
+        ════════════════════════════ -->
+        <div id="section-upcoming">
+            <div class="section-header">Upcoming Events</div>
+            <div class="event-list">
+
+                <!-- Upcoming Event 2 (TBD) -->
+                <div class="event-card">
+                    <div class="event-title">
+                        Upcoming Event
+                        <span class="status-badge tbd">TBD</span>
+                    </div>
+                    <table class="event-summary-table">
+                        <tr>
+                            <th>Location</th>
+                            <td>To be determined</td>
+                        </tr>
+                        <tr>
+                            <th>Venue</th>
+                            <td>Coming soon</td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td>To be determined</td>
+                        </tr>
+                        <tr>
+                            <th>Time</th>
+                            <td>Soon</td>
+                        </tr>
+                    </table>
+                    <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
+                    <div class="event-details" style="display:none;">
+                        <table class="event-details-table">
+                            <tr>
+                                <th>Amount</th>
+                                <td>To be determined</td>
+                            </tr>
+                            <tr>
+                                <th>Dress Code</th>
+                                <td>To be determined</td>
+                            </tr>
+                            <tr>
+                                <th>Expected Time of Arrival</th>
+                                <td>To be communicated</td>
+                            </tr>
+                            <tr>
+                                <th>Meeting Point</th>
+                                <td>Coming soon</td>
+                            </tr>
+                            <tr>
+                                <th>Event Type</th>
+                                <td>Coming soon</td>
+                            </tr>
+                            <tr>
+                                <th>Job Type</th>
+                                <td>Coming soon</td>
+                            </tr>
+                            <tr>
+                                <th>Job Description</th>
+                                <td>....</td>
+                            </tr>
+                            <tr>
+                                <th>Number of Staff Needed</th>
+                                <td>Not yet specified</td>
+                            </tr>
+                        </table>
+                        <div class="interest-section">
+                            <div class="interest-options">
+                                <span>Are you interested?</span>
+                                <button class="interest-btn" onclick="showInterestForm(this, true)">Yes</button>
+                                <button class="interest-btn-noo" onclick="showInterestForm(this, false)">No</button>
+                            </div>
+                            <form class="interest-form" style="display:none;"
+                                onsubmit="submitInterestForm(event, this)">
+                                <input type="hidden" name="Event" value="TBD Event">
+                                <label>Full Name</label>
+                                <input type="text" name="FullName" required>
+                                <label>Address</label>
+                                <input type="text" name="Address" required>
+                                <button type="submit">Submit</button>
+                                <div class="success-message" style="display:none;">
+                                    Thank you! Your interest has been sent to the admin.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ════════════════════════════
+             PAST EVENTS SECTION
+        ════════════════════════════ -->
+        <div id="section-past" style="display:none;">
+            <div class="section-header past">Past Events & Reviews</div>
+            <div class="event-list">
+
+                <!-- ── Completed Event: Birthday @ Jogor Centre ── -->
+                <div class="event-card completed">
+                    <div class="event-title">
+                        Birthday Celebration – Jogor Centre
+                        <span class="status-badge completed">✔ Completed</span>
+                    </div>
+                    <table class="event-summary-table">
+                        <tr>
+                            <th>Location</th>
+                            <td>Ibadan</td>
+                        </tr>
+                        <tr>
+                            <th>Venue</th>
+                            <td>Jogor Centre – Hall of Grace</td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td>May 09, 2026</td>
+                        </tr>
+                    </table>
+
+                    <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
+                    <button class="feedback-btn" onclick="toggleFeedback(this)">⭐ Leave a Review</button>
+
+                    <!-- Event Details (collapsed by default) -->
+                    <div class="event-details" style="display:none;">
+                        <table class="event-details-table">
+                            <tr>
+                                <th>Amount</th>
+                                <td>₦7,000 (transport allowance inclusive)</td>
+                            </tr>
+                            <tr>
+                                <th>Dress Code</th>
+                                <td>White shirt, black trousers, black/white sneakers or black flat shoes</td>
+                            </tr>
+                            <tr>
+                                <th>Expected Time of Arrival</th>
+                                <td>09:00 AM</td>
+                            </tr>
+                            <tr>
+                                <th>Meeting Point</th>
+                                <td>Jogor Centre – Hall of Grace</td>
+                            </tr>
+                            <tr>
+                                <th>Event Type</th>
+                                <td>Birthday</td>
+                            </tr>
+                            <tr>
+                                <th>Job Type</th>
+                                <td>Event Server</td>
+                            </tr>
+                            <tr>
+                                <th>Job Description</th>
+                                <td>Serve food to guests in a polite and professional manner. Responsibilities
+                                    include replenishing food as needed, clearing used dishes from tables,
+                                    maintaining cleanliness around dining areas, adhering to food safety
+                                    standards, and coordinating with the catering team to ensure smooth and
+                                    timely service.</td>
+                            </tr>
+                            <tr>
+                                <th>Staff Used</th>
+                                <td>21</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- ── Feedback Form ── -->
+                    <div class="feedback-form-wrapper" style="display:none;">
+                        <h3>⭐ Share Your Experience</h3>
+                        <form onsubmit="submitFeedback(event, this)">
+                            <input type="hidden" name="Event" value="Birthday – Jogor Centre – May 09 2026">
+
+                            <label>Full Name</label>
+                            <input type="text" name="FullName" required placeholder="Enter your full name">
+
+                            <label>Overall Event Rating</label>
+                            <div class="star-rating">
+                                <input type="radio" id="star5a" name="Rating" value="5"><label for="star5a">★</label>
+                                <input type="radio" id="star4a" name="Rating" value="4"><label for="star4a">★</label>
+                                <input type="radio" id="star3a" name="Rating" value="3"><label for="star3a">★</label>
+                                <input type="radio" id="star2a" name="Rating" value="2"><label for="star2a">★</label>
+                                <input type="radio" id="star1a" name="Rating" value="1"><label for="star1a">★</label>
+                            </div>
+                            
+                            <label>Client Rating</label>
+                            <div class="star-rating">
+                                <input type="radio" id="star5b" name="ClientRating" value="5"><label for="star5b">★</label>
+                                <input type="radio" id="star4b" name="ClientRating" value="4"><label for="star4b">★</label>
+                                <input type="radio" id="star3b" name="ClientRating" value="3"><label for="star3b">★</label>
+                                <input type="radio" id="star2b" name="ClientRating" value="2"><label for="star2b">★</label>
+                                <input type="radio" id="star1b" name="ClientRating" value="1"><label for="star1b">★</label>
+                            </div>
+
+                            <label>How was the event organised?</label>
+                            <select name="Organisation">
+                                <option value="">-- Select --</option>
+                                <option value="Excellent">Excellent</option>
+                                <option value="Good">Good</option>
+                                <option value="Average">Average</option>
+                                <option value="Poor">Poor</option>
+                            </select>
+
+                            <label>Was payment made on time?</label>
+                            <select name="PaymentOnTime">
+                                <option value="">-- Select --</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Partially">Partially</option>
+                            </select>
+
+                            <label>Would you attend this type of event again?</label>
+                            <select name="WouldAttendAgain">
+                                <option value="">-- Select --</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Maybe">Maybe</option>
+                            </select>
+
+                            <label>Any comments or suggestions?</label>
+                            <textarea name="Comments" placeholder="Share your thoughts..."></textarea>
+
+                            <button type="submit">Submit Review</button>
+                            <div class="success-message" style="display:none;">
+                                ✅ Thank you! Your review has been submitted.
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <!-- End Completed Event Card -->
+
+            </div>
+        </div>
+        <!-- End Past Events Section -->
+
+    </div><!-- End .container -->
 
     <script>
         const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyDqPXkO1ryGwIPWCJZblRg_HD8iSIAliZsUykNnsfeLZEeePb8IafSkp-WGEH6BEE4Wg/exec";
 
-        function toggleDetails(btn) {
-            const details = btn.nextElementSibling;
-            const isOpen = details.style.display === 'block';
-            document.querySelectorAll('.event-details').forEach(div => div.style.display = 'none');
-            document.querySelectorAll('.view-details-btn').forEach(b => b.textContent = 'View Details');
-            if (!isOpen) {
-                details.style.display = 'block';
-                btn.textContent = 'Hide Details';
-            }
+        /* ── Show/Hide Sections ── */
+        function showSection(section, btn) {
+            document.getElementById('section-upcoming').style.display = section === 'upcoming' ? 'block' : 'none';
+            document.getElementById('section-past').style.display = section === 'past' ? 'block' : 'none';
+            document.querySelectorAll('.section-toggle-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
         }
 
+        /* ── Toggle Event Details ── */
+        function toggleDetails(btn) {
+            const details = btn.nextElementSibling;
+            // Check if it's the feedback btn (skip it)
+            let detailsDiv = null;
+            let sibling = btn.nextElementSibling;
+            while (sibling) {
+                if (sibling.classList.contains('event-details')) {
+                    detailsDiv = sibling;
+                    break;
+                }
+                sibling = sibling.nextElementSibling;
+            }
+            if (!detailsDiv) return;
+
+            const isOpen = detailsDiv.style.display === 'block';
+            detailsDiv.style.display = isOpen ? 'none' : 'block';
+            btn.textContent = isOpen ? 'View Details' : 'Hide Details';
+        }
+
+        /* ── Toggle Feedback Form ── */
+        function toggleFeedback(btn) {
+            const card = btn.closest('.event-card');
+            const feedbackWrapper = card.querySelector('.feedback-form-wrapper');
+            const isOpen = feedbackWrapper.style.display === 'block';
+            feedbackWrapper.style.display = isOpen ? 'none' : 'block';
+            btn.textContent = isOpen ? '⭐ Leave a Review' : '✖ Close Review';
+        }
+
+        /* ── Show Interest Form ── */
         function showInterestForm(btn, isYes) {
             const section = btn.closest('.interest-section');
             const form = section.querySelector('.interest-form');
@@ -460,45 +701,91 @@
             }
         }
 
+        /* ── Submit Interest Form ── */
         function submitInterestForm(event, form) {
             event.preventDefault();
-
-            
             const eventValue = form.querySelector('input[name="Event"]').value;
             const fullName = form.querySelector('input[name="FullName"]').value;
             const address = form.querySelector('input[name="Address"]').value;
+            const submitBtn = form.querySelector('button[type="submit"]');
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Submitting...";
+
+            fetch(WEB_APP_URL, {
+                method: "POST",
+                mode: "no-cors",
+                headers: { "Content-Type": "text/plain" },
+                body: JSON.stringify({ Type: "Interest", Event: eventValue, FullName: fullName, Address: address })
+            }).then(() => {
+                const successMsg = form.querySelector('.success-message');
+                successMsg.style.display = 'block';
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Submit";
+                setTimeout(() => {
+                    form.style.display = 'none';
+                    form.closest('.interest-section').querySelector('.interest-options').style.display = 'block';
+                    form.reset();
+                    successMsg.style.display = 'none';
+                }, 2500);
+            }).catch(err => {
+                alert("Submission failed. Please try again.");
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Submit";
+                console.error(err);
+            });
+        }
+
+        /* ── Submit Feedback Form ── */
+        function submitFeedback(event, form) {
+            event.preventDefault();
+
+            const eventValue  = form.querySelector('input[name="Event"]').value;
+            const fullName    = form.querySelector('input[name="FullName"]').value;
+            const ratingInput = form.querySelector('input[name="Rating"]:checked');
+            const rating      = ratingInput ? ratingInput.value : "Not rated";
+            const organisation    = form.querySelector('select[name="Organisation"]').value;
+            const paymentOnTime   = form.querySelector('select[name="PaymentOnTime"]').value;
+            const wouldAttend     = form.querySelector('select[name="WouldAttendAgain"]').value;
+            const comments        = form.querySelector('textarea[name="Comments"]').value;
 
             const submitBtn = form.querySelector('button[type="submit"]');
             submitBtn.disabled = true;
             submitBtn.textContent = "Submitting...";
 
-            
             fetch(WEB_APP_URL, {
                 method: "POST",
-                mode: "no-cors", 
-                headers: { "Content-Type": "text/plain" }, 
-                body: JSON.stringify({ Event: eventValue, FullName: fullName, Address: address })
-            })
-                .then(() => {
-                    
-                    const successMsg = form.querySelector('.success-message');
-                    successMsg.style.display = 'block';
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = "Submit";
-
-                    setTimeout(() => {
-                        form.style.display = 'none';
-                        form.closest('.interest-section').querySelector('.interest-options').style.display = 'block';
-                        form.reset();
-                        successMsg.style.display = 'none';
-                    }, 2500);
+                mode: "no-cors",
+                headers: { "Content-Type": "text/plain" },
+                body: JSON.stringify({
+                    Type: "Feedback",
+                    Event: eventValue,
+                    FullName: fullName,
+                    Rating: rating,
+                    Organisation: organisation,
+                    PaymentOnTime: paymentOnTime,
+                    WouldAttendAgain: wouldAttend,
+                    Comments: comments
                 })
-                .catch(err => {
-                    alert("Submission failed. Please try again.");
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = "Submit";
-                    console.error(err);
-                });
+            }).then(() => {
+                const successMsg = form.querySelector('.success-message');
+                successMsg.style.display = 'block';
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Submit Review";
+                // Optionally hide the form after a delay
+                setTimeout(() => {
+                    form.closest('.feedback-form-wrapper').style.display = 'none';
+                    const feedbackBtn = form.closest('.event-card').querySelector('.feedback-btn');
+                    feedbackBtn.textContent = '✅ Review Submitted';
+                    feedbackBtn.disabled = true;
+                    feedbackBtn.style.background = '#6c757d';
+                }, 2500);
+            }).catch(err => {
+                alert("Submission failed. Please try again.");
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Submit Review";
+                console.error(err);
+            });
         }
     </script>
 </body>
