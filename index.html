@@ -422,17 +422,17 @@
                 <!-- Upcoming Event 2 (TBD) -->
                 <div class="event-card">
                     <div class="event-title">
-                        Upcoming Event
-                        <span class="status-badge tbd">TBD</span>
+                        ILEYA CELEBRATION - ALALUBOSA
+                        <span class="status-badge tbd">open</span>
                     </div>
                     <table class="event-summary-table">
                         <tr>
                             <th>Location</th>
-                            <td>To be determined</td>
+                            <td>Ibadan</td>
                         </tr>
                         <tr>
                             <th>Venue</th>
-                            <td>Coming soon</td>
+                            <td>Alalubosa GRA</td>
                         </tr>
                         <tr>
                             <th>Date</th>
@@ -440,7 +440,7 @@
                         </tr>
                         <tr>
                             <th>Time</th>
-                            <td>Soon</td>
+                            <td>8:00 AM</td>
                         </tr>
                     </table>
                     <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
@@ -448,37 +448,133 @@
                         <table class="event-details-table">
                             <tr>
                                 <th>Amount</th>
-                                <td>To be determined</td>
+                                <td>N7,000 (transportation included)</td>
                             </tr>
                             <tr>
                                 <th>Dress Code</th>
-                                <td>To be determined</td>
+                                <td>Blue Jean trouser and White plaintees</td>
                             </tr>
                             <tr>
                                 <th>Expected Time of Arrival</th>
-                                <td>To be communicated</td>
+                                <td>8:00 AM</td>
                             </tr>
                             <tr>
                                 <th>Meeting Point</th>
-                                <td>Coming soon</td>
+                                <td>Alalubosa GRA</td>
                             </tr>
                             <tr>
                                 <th>Event Type</th>
-                                <td>Coming soon</td>
+                                <td>Ileya</td>
                             </tr>
                             <tr>
                                 <th>Job Type</th>
-                                <td>Coming soon</td>
+                                <td>Event Server</td>
                             </tr>
                             <tr>
                                 <th>Job Description</th>
-                                <td>....</td>
+                                <td>Serve food to guests in a polite and professional manner. Responsibilities
+                                    include replenishing food as needed, clearing used dishes from tables,
+                                    maintaining cleanliness around dining areas, adhering to food safety
+                                    standards, and coordinating with the catering team to ensure smooth and
+                                    timely service.</td>
                             </tr>
                             <tr>
                                 <th>Number of Staff Needed</th>
-                                <td>Not yet specified</td>
+                                <td>4</td>
                             </tr>
                         </table>
+
+                        
+                        <div class="interest-section">
+                            <div class="interest-options">
+                                <span>Are you interested?</span>
+                                <button class="interest-btn" onclick="showInterestForm(this, true)">Yes</button>
+                                <button class="interest-btn-noo" onclick="showInterestForm(this, false)">No</button>
+                            </div>
+                            <form class="interest-form" style="display:none;"
+                                onsubmit="submitInterestForm(event, this)">
+                                <input type="hidden" name="Event" value="TBD Event">
+                                <label>Full Name</label>
+                                <input type="text" name="FullName" required>
+                                <label>Address</label>
+                                <input type="text" name="Address" required>
+                                <button type="submit">Submit</button>
+                                <div class="success-message" style="display:none;">
+                                    Thank you! Your interest has been sent to the admin.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Upcoming Event 3 (TBD) -->
+                <div class="event-card">
+                    <div class="event-title">
+                        ILEYA CELEBRATION - AERODOME
+                        <span class="status-badge tbd">Open</span>
+                    </div>
+                    <table class="event-summary-table">
+                        <tr>
+                            <th>Location</th>
+                            <td>Ibadan</td>
+                        </tr>
+                        <tr>
+                            <th>Venue</th>
+                            <td>Aerodome, Samonda</td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td>To be determined</td>
+                        </tr>
+                        <tr>
+                            <th>Time</th>
+                            <td>8:00 AM</td>
+                        </tr>
+                    </table>
+                    <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
+                    <div class="event-details" style="display:none;">
+                        <table class="event-details-table">
+                            <tr>
+                                <th>Amount</th>
+                                <td>N7,000 (transportation included)</td>
+                            </tr>
+                            <tr>
+                                <th>Dress Code</th>
+                                <td>Ankara pant trouser and black plaintees</td>
+                            </tr>
+                            <tr>
+                                <th>Expected Time of Arrival</th>
+                                <td>8:00 AM</td>
+                            </tr>
+                            <tr>
+                                <th>Meeting Point</th>
+                                <td>Aerodome, Samonda</td>
+                            </tr>
+                            <tr>
+                                <th>Event Type</th>
+                                <td>Ileya</td>
+                            </tr>
+                            <tr>
+                                <th>Job Type</th>
+                                <td>Event Server</td>
+                            </tr>
+                            <tr>
+                                <th>Job Description</th>
+                                <td>Serve food to guests in a polite and professional manner. Responsibilities
+                                    include replenishing food as needed, clearing used dishes from tables,
+                                    maintaining cleanliness around dining areas, adhering to food safety
+                                    standards, and coordinating with the catering team to ensure smooth and
+                                    timely service.</td>
+                            </tr>
+                            <tr>
+                                <th>Number of Staff Needed</th>
+                                <td>10</td>
+                            </tr>
+                        </table>
+
+                        
                         <div class="interest-section">
                             <div class="interest-options">
                                 <span>Are you interested?</span>
