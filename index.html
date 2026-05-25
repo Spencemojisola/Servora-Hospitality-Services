@@ -419,10 +419,10 @@
             <div class="section-header">Upcoming Events</div>
             <div class="event-list">
 
-                <!-- Upcoming Event 2 (TBD) -->
+                <!-- Upcoming Event 1 (TBD) -->
                 <div class="event-card">
                     <div class="event-title">
-                        ILEYA CELEBRATION - ALALUBOSA
+                        ILEYA CELEBRATION 1 - ALALUBOSA
                         <span class="status-badge tbd">open</span>
                     </div>
                     <table class="event-summary-table">
@@ -439,10 +439,7 @@
                             <th>Date</th>
                             <td>Wednesday, 27th May, 2026</td>
                         </tr>
-                        <tr>
-                            <th>Time</th>
-                            <td>8:00 AM</td>
-                        </tr>
+
                         <tr>
                             <th>Please note</th>
                             <td>People who live at close proximity to the venue are encouraged to apply and will be
@@ -463,7 +460,8 @@
                             </tr>
                             <tr>
                                 <th>Dress Code</th>
-                                <td>Plain White T-shirt and Black Trouser. Accessory: Tie will be provided upon arrival</td>
+                                <td>Plain White T-shirt and Black Trouser. Accessory: Tie will be provided upon arrival
+                                </td>
                             </tr>
                             <tr>
                                 <th>Expected Time of Arrival</th>
@@ -517,10 +515,10 @@
 
 
 
-                <!-- Upcoming Event 3 (TBD) -->
+                <!-- Upcoming Event 2 (TBD) -->
                 <div class="event-card">
                     <div class="event-title">
-                        ILEYA CELEBRATION - AERODOME
+                        ILEYA CELEBRATION 2 - AERODOME
                         <span class="status-badge tbd">Open</span>
                     </div>
                     <table class="event-summary-table">
@@ -534,12 +532,9 @@
                         </tr>
                         <tr>
                             <th>Date</th>
-                            <td>Thursday, 28th September 2026</td>
+                            <td>Thursday, 28th May, 2026</td>
                         </tr>
-                        <tr>
-                            <th>Time</th>
-                            <td>8:00 AM</td>
-                        </tr>
+
                         <tr>
                             <th>Please note</th>
                             <td>People who live at close proximity to the venue are encouraged to apply and will be
@@ -560,7 +555,8 @@
                             </tr>
                             <tr>
                                 <th>Dress Code</th>
-                                <td>Female: Black Gown, Male: Black plain tshirt and black trousers. Accessories: White scarf will be provided.</td>
+                                <td>Female: Black Gown, Male: Black plain tshirt and black trousers. Accessories: White
+                                    scarf will be provided.</td>
                             </tr>
                             <tr>
                                 <th>Expected Time of Arrival</th>
@@ -586,7 +582,97 @@
                                     standards, and coordinating with the catering team to ensure smooth and
                                     timely service.</td>
                             </tr>
-                            
+
+                        </table>
+
+
+                        <div class="interest-section">
+                            <div class="interest-options">
+                                <span>Are you interested?</span>
+                                <button class="interest-btn" onclick="showInterestForm(this, true)">Yes</button>
+                                <button class="interest-btn-noo" onclick="showInterestForm(this, false)">No</button>
+                            </div>
+                            <form class="interest-form" style="display:none;"
+                                onsubmit="submitInterestForm(event, this)">
+                                <input type="hidden" name="Event" value="TBD Event">
+                                <label>Full Name</label>
+                                <input type="text" name="FullName" required>
+                                <label>Address</label>
+                                <input type="text" name="Address" required>
+                                <button type="submit">Submit</button>
+                                <div class="success-message" style="display:none;">
+                                    Thank you! Your interest has been sent to the admin.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Upcoming Event 3 (TBD) -->
+                <div class="event-card">
+                    <div class="event-title">
+                        WEDDING
+                        <span class="status-badge tbd">Open</span>
+                    </div>
+                    <table class="event-summary-table">
+                        <tr>
+                            <th>Location</th>
+                            <td>Ibadan</td>
+                        </tr>
+                        <tr>
+                            <th>Venue</th>
+                            <td>To be communicated soon</td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td>Saturday, 6th June 2026</td>
+                        </tr>
+
+                        <tr>
+                            <th>Please note</th>
+                            <td>People who live at close proximity to the venue are encouraged to apply and will be
+                                given preference.</td>
+                        </tr>
+                        <tr>
+                            <th>Number of Staff Needed</th>
+                            <td>6</td>
+
+                        </tr>
+                    </table>
+                    <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
+                    <div class="event-details" style="display:none;">
+                        <table class="event-details-table">
+                            <tr>
+                                <th>Amount</th>
+                                <td>To be updated soon</td>
+                            </tr>
+                            <tr>
+                                <th>Dress Code</th>
+                                <td>Female: Black Gown, Accessories: will be provided.</td>
+                            </tr>
+                            <tr>
+                                <th>Expected Time of Arrival</th>
+                                <td>8:30 AM</td>
+                            </tr>
+                            <tr>
+                                <th>Meeting Point</th>
+                                <td>To be updated soon</td>
+                            </tr>
+                            <tr>
+                                <th>Event Type</th>
+                                <td>Wedding</td>
+                            </tr>
+                            <tr>
+                                <th>Job Type</th>
+                                <td>Event Ushers</td>
+                            </tr>
+                            <tr>
+                                <th>Job Description</th>
+                                <td>To be updated soon</td>
+                            </tr>
+
                         </table>
 
 
