@@ -325,9 +325,9 @@
             font-weight: normal !important;
         }
 
-        .star-rating input:checked ~ label,
+        .star-rating input:checked~label,
         .star-rating label:hover,
-        .star-rating label:hover ~ label {
+        .star-rating label:hover~label {
             color: #f5a623;
         }
 
@@ -433,14 +433,25 @@
                         <tr>
                             <th>Venue</th>
                             <td>Alalubosa GRA</td>
+
                         </tr>
                         <tr>
                             <th>Date</th>
-                            <td>To be determined</td>
+                            <td>Wednesday, 27th May, 2026</td>
                         </tr>
                         <tr>
                             <th>Time</th>
                             <td>8:00 AM</td>
+                        </tr>
+                        <tr>
+                            <th>Please note</th>
+                            <td>People who live at close proximity to the venue are encouraged to apply and will be
+                                given preference.</td>
+                        </tr>
+                        <tr>
+                            <th>Number of Staff Needed</th>
+                            <td>4</td>
+
                         </tr>
                     </table>
                     <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
@@ -452,7 +463,7 @@
                             </tr>
                             <tr>
                                 <th>Dress Code</th>
-                                <td>Blue Jean trouser and White plaintees</td>
+                                <td>Plain White T-shirt and Black Trouser</td>
                             </tr>
                             <tr>
                                 <th>Expected Time of Arrival</th>
@@ -478,13 +489,10 @@
                                     standards, and coordinating with the catering team to ensure smooth and
                                     timely service.</td>
                             </tr>
-                            <tr>
-                                <th>Number of Staff Needed</th>
-                                <td>4</td>
-                            </tr>
+
                         </table>
 
-                        
+
                         <div class="interest-section">
                             <div class="interest-options">
                                 <span>Are you interested?</span>
@@ -526,11 +534,21 @@
                         </tr>
                         <tr>
                             <th>Date</th>
-                            <td>To be determined</td>
+                            <td>Thursday, 28th September 2026</td>
                         </tr>
                         <tr>
                             <th>Time</th>
                             <td>8:00 AM</td>
+                        </tr>
+                        <tr>
+                            <th>Please note</th>
+                            <td>People who live at close proximity to the venue are encouraged to apply and will be
+                                given preference.</td>
+                        </tr>
+                        <tr>
+                            <th>Number of Staff Needed</th>
+                            <td>10</td>
+
                         </tr>
                     </table>
                     <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
@@ -542,7 +560,7 @@
                             </tr>
                             <tr>
                                 <th>Dress Code</th>
-                                <td>Ankara pant trouser and black plaintees</td>
+                                <td>Female: Black Gown, Male: Black plain tshirt and black trousers. Accessories: White scarf will be provided.</td>
                             </tr>
                             <tr>
                                 <th>Expected Time of Arrival</th>
@@ -568,13 +586,10 @@
                                     standards, and coordinating with the catering team to ensure smooth and
                                     timely service.</td>
                             </tr>
-                            <tr>
-                                <th>Number of Staff Needed</th>
-                                <td>10</td>
-                            </tr>
+                            
                         </table>
 
-                        
+
                         <div class="interest-section">
                             <div class="interest-options">
                                 <span>Are you interested?</span>
@@ -690,14 +705,19 @@
                                 <input type="radio" id="star2a" name="Rating" value="2"><label for="star2a">★</label>
                                 <input type="radio" id="star1a" name="Rating" value="1"><label for="star1a">★</label>
                             </div>
-                            
+
                             <label>Client Rating</label>
                             <div class="star-rating">
-                                <input type="radio" id="star5b" name="ClientRating" value="5"><label for="star5b">★</label>
-                                <input type="radio" id="star4b" name="ClientRating" value="4"><label for="star4b">★</label>
-                                <input type="radio" id="star3b" name="ClientRating" value="3"><label for="star3b">★</label>
-                                <input type="radio" id="star2b" name="ClientRating" value="2"><label for="star2b">★</label>
-                                <input type="radio" id="star1b" name="ClientRating" value="1"><label for="star1b">★</label>
+                                <input type="radio" id="star5b" name="ClientRating" value="5"><label
+                                    for="star5b">★</label>
+                                <input type="radio" id="star4b" name="ClientRating" value="4"><label
+                                    for="star4b">★</label>
+                                <input type="radio" id="star3b" name="ClientRating" value="3"><label
+                                    for="star3b">★</label>
+                                <input type="radio" id="star2b" name="ClientRating" value="2"><label
+                                    for="star2b">★</label>
+                                <input type="radio" id="star1b" name="ClientRating" value="1"><label
+                                    for="star1b">★</label>
                             </div>
 
                             <label>How was the event organised?</label>
@@ -836,14 +856,14 @@
         function submitFeedback(event, form) {
             event.preventDefault();
 
-            const eventValue  = form.querySelector('input[name="Event"]').value;
-            const fullName    = form.querySelector('input[name="FullName"]').value;
+            const eventValue = form.querySelector('input[name="Event"]').value;
+            const fullName = form.querySelector('input[name="FullName"]').value;
             const ratingInput = form.querySelector('input[name="Rating"]:checked');
-            const rating      = ratingInput ? ratingInput.value : "Not rated";
-            const organisation    = form.querySelector('select[name="Organisation"]').value;
-            const paymentOnTime   = form.querySelector('select[name="PaymentOnTime"]').value;
-            const wouldAttend     = form.querySelector('select[name="WouldAttendAgain"]').value;
-            const comments        = form.querySelector('textarea[name="Comments"]').value;
+            const rating = ratingInput ? ratingInput.value : "Not rated";
+            const organisation = form.querySelector('select[name="Organisation"]').value;
+            const paymentOnTime = form.querySelector('select[name="PaymentOnTime"]').value;
+            const wouldAttend = form.querySelector('select[name="WouldAttendAgain"]').value;
+            const comments = form.querySelector('textarea[name="Comments"]').value;
 
             const submitBtn = form.querySelector('button[type="submit"]');
             submitBtn.disabled = true;
