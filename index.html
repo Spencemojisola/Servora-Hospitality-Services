@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +11,6 @@
             background: #f4f6f8;
             color: #222;
         }
-
         header {
             background: #2d6cdf;
             color: #fff;
@@ -20,21 +18,17 @@
             text-align: center;
             letter-spacing: 1px;
         }
-
         .container {
             max-width: 900px;
             margin: 2rem auto;
             padding: 0 1rem;
         }
-
-        /* ── Section Toggle Buttons ── */
         .section-toggle-bar {
             display: flex;
             gap: 1rem;
             margin-bottom: 2rem;
             flex-wrap: wrap;
         }
-
         .section-toggle-btn {
             background: #fff;
             color: #2d6cdf;
@@ -46,20 +40,16 @@
             cursor: pointer;
             transition: background 0.2s, color 0.2s;
         }
-
         .section-toggle-btn.active,
         .section-toggle-btn:hover {
             background: #2d6cdf;
             color: #fff;
         }
-
-        /* ── Event List ── */
         .event-list {
             display: flex;
             flex-direction: column;
             gap: 2rem;
         }
-
         .event-card {
             background: #fff;
             border-radius: 8px;
@@ -69,15 +59,12 @@
             border-left: 6px solid #2d6cdf;
             position: relative;
         }
-
         .event-card:hover {
             box-shadow: 0 4px 16px rgba(44, 62, 80, 0.16);
         }
-
         .event-card.completed {
             border-left-color: #28a745;
         }
-
         .event-title {
             font-size: 1.4rem;
             font-weight: 600;
@@ -88,8 +75,6 @@
             gap: 0.75rem;
             flex-wrap: wrap;
         }
-
-        /* ── Status Badge ── */
         .status-badge {
             display: inline-block;
             font-size: 0.75rem;
@@ -100,30 +85,24 @@
             text-transform: uppercase;
             vertical-align: middle;
         }
-
         .status-badge.upcoming {
             background: #e8f0fe;
             color: #2d6cdf;
         }
-
         .status-badge.completed {
             background: #d4edda;
             color: #28a745;
         }
-
         .status-badge.tbd {
             background: #fff3cd;
             color: #856404;
         }
-
-        /* ── Tables ── */
         .event-summary-table,
         .event-details-table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 1rem;
         }
-
         .event-summary-table th,
         .event-summary-table td,
         .event-details-table th,
@@ -133,7 +112,6 @@
             border-bottom: 1px solid #f0f0f0;
             font-size: 1rem;
         }
-
         .event-summary-table th,
         .event-details-table th {
             width: 180px;
@@ -141,13 +119,10 @@
             font-weight: 500;
             background: #f8fafc;
         }
-
         .event-summary-table td,
         .event-details-table td {
             color: #222;
         }
-
-        /* ── Buttons ── */
         .view-details-btn,
         .interest-btn,
         .feedback-btn {
@@ -162,15 +137,12 @@
             margin-right: 0.5rem;
             transition: background 0.2s;
         }
-
         .feedback-btn {
             background: #28a745;
         }
-
         .feedback-btn:hover {
             background: #1e7e34;
         }
-
         .interest-btn-no,
         .interest-btn-noo {
             background: red;
@@ -184,25 +156,19 @@
             margin-right: 0.5rem;
             transition: background 0.2s;
         }
-
         .view-details-btn:hover,
         .interest-btn:hover {
             background: #1b4fa0;
         }
-
-        /* ── Interest Form ── */
         .event-details {
             animation: fadeIn 0.3s;
         }
-
         .interest-section {
             margin-top: 1rem;
         }
-
         .interest-options {
             margin-bottom: 1rem;
         }
-
         .interest-form {
             background: #f8fafc;
             padding: 1rem;
@@ -212,14 +178,12 @@
             max-width: 350px;
             animation: fadeIn 0.3s;
         }
-
         .interest-form label {
             display: block;
             margin-bottom: 0.3rem;
             font-weight: 500;
             color: #2d6cdf;
         }
-
         .interest-form input[type="text"] {
             width: 100%;
             padding: 0.4rem;
@@ -229,7 +193,6 @@
             font-size: 1rem;
             box-sizing: border-box;
         }
-
         .interest-form button {
             background: #2d6cdf;
             color: #fff;
@@ -240,12 +203,9 @@
             cursor: pointer;
             transition: background 0.2s;
         }
-
         .interest-form button:hover {
             background: #1b4fa0;
         }
-
-        /* ── Feedback / Review Form ── */
         .feedback-form-wrapper {
             background: #f0fdf4;
             border: 1px solid #c3e6cb;
@@ -255,20 +215,17 @@
             max-width: 480px;
             animation: fadeIn 0.3s;
         }
-
         .feedback-form-wrapper h3 {
             margin: 0 0 1rem;
             color: #28a745;
             font-size: 1.1rem;
         }
-
         .feedback-form-wrapper label {
             display: block;
             margin-bottom: 0.3rem;
             font-weight: 500;
             color: #333;
         }
-
         .feedback-form-wrapper input[type="text"],
         .feedback-form-wrapper textarea,
         .feedback-form-wrapper select {
@@ -282,11 +239,9 @@
             font-family: inherit;
             resize: vertical;
         }
-
         .feedback-form-wrapper textarea {
             min-height: 90px;
         }
-
         .feedback-form-wrapper button[type="submit"] {
             background: #28a745;
             color: #fff;
@@ -297,12 +252,9 @@
             cursor: pointer;
             transition: background 0.2s;
         }
-
         .feedback-form-wrapper button[type="submit"]:hover {
             background: #1e7e34;
         }
-
-        /* ── Star Rating ── */
         .star-rating {
             display: flex;
             flex-direction: row-reverse;
@@ -310,11 +262,9 @@
             gap: 4px;
             margin-bottom: 0.9rem;
         }
-
         .star-rating input {
             display: none;
         }
-
         .star-rating label {
             font-size: 2rem;
             color: #ccc;
@@ -323,29 +273,22 @@
             margin-bottom: 0 !important;
             font-weight: normal !important;
         }
-
         .star-rating input:checked~label,
         .star-rating label:hover,
         .star-rating label:hover~label {
             color: #f5a623;
         }
-
-        /* ── Success Message ── */
         .success-message {
             color: #218838;
             margin-top: 0.5rem;
             font-weight: 500;
         }
-
-        /* ── Empty State ── */
         .empty-state {
             text-align: center;
             color: #888;
             padding: 2rem;
             font-size: 1.1rem;
         }
-
-        /* ── Section Header ── */
         .section-header {
             font-size: 1.3rem;
             font-weight: 700;
@@ -354,51 +297,28 @@
             padding-bottom: 0.5rem;
             border-bottom: 2px solid #e8f0fe;
         }
-
         .section-header.past {
             color: #28a745;
             border-bottom-color: #d4edda;
         }
-
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
         @media (max-width: 600px) {
-            .container {
-                padding: 0 0.5rem;
-            }
-
-            .event-card {
-                padding: 1rem;
-            }
-
+            .container { padding: 0 0.5rem; }
+            .event-card { padding: 1rem; }
             .event-summary-table th,
-            .event-details-table th {
-                width: 120px;
-            }
-
-            .section-toggle-bar {
-                flex-direction: column;
-            }
+            .event-details-table th { width: 120px; }
+            .section-toggle-bar { flex-direction: column; }
         }
     </style>
 </head>
-
 <body>
     <header>
         <h1>Staff Dashboard: Events</h1>
         <p>Exclusive event details for S.H.S staff</p>
     </header>
-
     <div class="container">
 
         <!-- ── Section Toggle Bar ── -->
@@ -418,91 +338,7 @@
             <div class="section-header">Upcoming Events</div>
             <div class="event-list">
 
-                <!-- ── Upcoming Event: WEDDING ── -->
-                <div class="event-card">
-                    <div class="event-title">
-                        WEDDING
-                        <span class="status-badge tbd">Open</span>
-                    </div>
-                    <table class="event-summary-table">
-                        <tr>
-                            <th>Location</th>
-                            <td>Ibadan</td>
-                        </tr>
-                        <tr>
-                            <th>Venue</th>
-                            <td>E99 Events Centre Hall 2, Oluyole Ibadan</td>
-                        </tr>
-                        <tr>
-                            <th>Date</th>
-                            <td>Saturday, 6th June 2026</td>
-                        </tr>
-                        <tr>
-                            <th>Please note</th>
-                            <td>People who live at close proximity to the venue are encouraged to apply and will be
-                                given preference.</td>
-                        </tr>
-                        <tr>
-                            <th>Number of Staff Needed</th>
-                            <td>5</td>
-                        </tr>
-                    </table>
-                    <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
-                    <div class="event-details" style="display:none;">
-                        <table class="event-details-table">
-                            <tr>
-                                <th>Amount</th>
-                                <td>N8,000 (transportation included)</td>
-                            </tr>
-                            <tr>
-                                <th>Dress Code</th>
-                                <td>Female: Black Gown and Black comfortable shoes. Beige scarf will be provided.</td>
-                            </tr>
-                            <tr>
-                                <th>Expected Time of Arrival</th>
-                                <td>9:30 AM</td>
-                            </tr>
-                            <tr>
-                                <th>Event Type</th>
-                                <td>Wedding</td>
-                            </tr>
-                            <tr>
-                                <th>Job Type</th>
-                                <td>Event Ushers</td>
-                            </tr>
-                            <tr>
-                                <th>Job Description</th>
-                                <td>You will be responsible for ensuring guests are warmly welcomed and seamlessly
-                                    guided throughout both the church ceremony and reception, which will take place in
-                                    the same hall. Your role is to create a smooth, organised, and pleasant experience
-                                    for all guests from arrival to seating.</td>
-                            </tr>
-                        </table>
-
-                        <div class="interest-section">
-                            <div class="interest-options">
-                                <span>Are you interested?</span>
-                                <button class="interest-btn" onclick="showInterestForm(this, true)">Yes</button>
-                                <button class="interest-btn-noo" onclick="showInterestForm(this, false)">No</button>
-                            </div>
-                            <form class="interest-form" style="display:none;"
-                                onsubmit="submitInterestForm(event, this)">
-                                <input type="hidden" name="Event" value="Wedding Oluyole">
-                                <label>Full Name</label>
-                                <input type="text" name="FullName" required>
-                                <label>Address</label>
-                                <input type="text" name="Address" required>
-                                <button type="submit">Submit</button>
-                                <div class="success-message" style="display:none;">
-                                    Thank you! Your interest has been sent to the admin.
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Wedding Card -->
-
-
+                <!-- ── Upcoming Event: PRIVATE MEETING ── -->
                 <div class="event-card">
                     <div class="event-title">
                         PRIVATE MEETING
@@ -562,13 +398,11 @@
                                     with the catering team to ensure smooth and timely service.</td>
                             </tr>
                         </table>
-
                         <div class="interest-section">
                             <div class="interest-options">
                                 <span>Are you interested?</span>
                                 <button class="interest-btn" onclick="showInterestForm(this, true)">Yes</button>
-                                <button class="interest-btn-noo"
-                                    onclick="showInterestForm(this, false)">No</button>
+                                <button class="interest-btn-noo" onclick="showInterestForm(this, false)">No</button>
                             </div>
                             <form class="interest-form" style="display:none;"
                                 onsubmit="submitInterestForm(event, this)">
@@ -585,8 +419,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- End Private Meeting Card -->
 
-
+                <!-- ── Upcoming Event: SIGNATURE ── -->
                 <div class="event-card">
                     <div class="event-title">
                         SIGNATURE
@@ -646,13 +481,11 @@
                                     with the catering team to ensure smooth and timely service.</td>
                             </tr>
                         </table>
-
                         <div class="interest-section">
                             <div class="interest-options">
                                 <span>Are you interested?</span>
                                 <button class="interest-btn" onclick="showInterestForm(this, true)">Yes</button>
-                                <button class="interest-btn-noo"
-                                    onclick="showInterestForm(this, false)">No</button>
+                                <button class="interest-btn-noo" onclick="showInterestForm(this, false)">No</button>
                             </div>
                             <form class="interest-form" style="display:none;"
                                 onsubmit="submitInterestForm(event, this)">
@@ -669,9 +502,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- End Signature Card -->
 
-
-
+                <!-- ── Upcoming Event: ELETA ── -->
                 <div class="event-card">
                     <div class="event-title">
                         ELETA
@@ -731,13 +564,11 @@
                                     with the catering team to ensure smooth and timely service.</td>
                             </tr>
                         </table>
-
                         <div class="interest-section">
                             <div class="interest-options">
                                 <span>Are you interested?</span>
                                 <button class="interest-btn" onclick="showInterestForm(this, true)">Yes</button>
-                                <button class="interest-btn-noo"
-                                    onclick="showInterestForm(this, false)">No</button>
+                                <button class="interest-btn-noo" onclick="showInterestForm(this, false)">No</button>
                             </div>
                             <form class="interest-form" style="display:none;"
                                 onsubmit="submitInterestForm(event, this)">
@@ -754,6 +585,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- End Eleta Card -->
 
             </div>
         </div>
@@ -765,6 +597,124 @@
         <div id="section-past" style="display:none;">
             <div class="section-header past">Past Events & Reviews</div>
             <div class="event-list">
+
+                <!-- ── Completed Event: WEDDING ── -->
+                <div class="event-card completed">
+                    <div class="event-title">
+                        WEDDING – E99 EVENTS CENTRE
+                        <span class="status-badge completed">✔ Completed</span>
+                    </div>
+                    <table class="event-summary-table">
+                        <tr>
+                            <th>Location</th>
+                            <td>Ibadan</td>
+                        </tr>
+                        <tr>
+                            <th>Venue</th>
+                            <td>E99 Events Centre Hall 2, Oluyole Ibadan</td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td>Saturday, 6th June 2026</td>
+                        </tr>
+                    </table>
+
+                    <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
+                    <button class="feedback-btn" onclick="toggleFeedback(this)">⭐ Leave a Review</button>
+
+                    <div class="event-details" style="display:none;">
+                        <table class="event-details-table">
+                            <tr>
+                                <th>Amount</th>
+                                <td>N8,000 (transportation included)</td>
+                            </tr>
+                            <tr>
+                                <th>Dress Code</th>
+                                <td>Female: Black Gown and Black comfortable shoes. Beige scarf will be provided.</td>
+                            </tr>
+                            <tr>
+                                <th>Expected Time of Arrival</th>
+                                <td>9:30 AM</td>
+                            </tr>
+                            <tr>
+                                <th>Meeting Point</th>
+                                <td>E99 Events Centre Hall 2, Oluyole Ibadan</td>
+                            </tr>
+                            <tr>
+                                <th>Event Type</th>
+                                <td>Wedding</td>
+                            </tr>
+                            <tr>
+                                <th>Job Type</th>
+                                <td>Event Ushers</td>
+                            </tr>
+                            <tr>
+                                <th>Job Description</th>
+                                <td>You will be responsible for ensuring guests are warmly welcomed and seamlessly
+                                    guided throughout both the church ceremony and reception, which will take place in
+                                    the same hall. Your role is to create a smooth, organised, and pleasant experience
+                                    for all guests from arrival to seating.</td>
+                            </tr>
+                            <tr>
+                                <th>Staff Used</th>
+                                <td>5</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Feedback Form -->
+                    <div class="feedback-form-wrapper" style="display:none;">
+                        <h3>⭐ Share Your Experience</h3>
+                        <form onsubmit="submitFeedback(event, this)">
+                            <input type="hidden" name="Event" value="Wedding – E99 Events Centre – 6th June 2026">
+                            <label>Full Name</label>
+                            <input type="text" name="FullName" required placeholder="Enter your full name">
+                            <label>Overall Event Rating</label>
+                            <div class="star-rating">
+                                <input type="radio" id="star5-wed" name="Rating" value="5"><label for="star5-wed">★</label>
+                                <input type="radio" id="star4-wed" name="Rating" value="4"><label for="star4-wed">★</label>
+                                <input type="radio" id="star3-wed" name="Rating" value="3"><label for="star3-wed">★</label>
+                                <input type="radio" id="star2-wed" name="Rating" value="2"><label for="star2-wed">★</label>
+                                <input type="radio" id="star1-wed" name="Rating" value="1"><label for="star1-wed">★</label>
+                            </div>
+                            <label>Client Rating</label>
+                            <div class="star-rating">
+                                <input type="radio" id="star5-wedc" name="ClientRating" value="5"><label for="star5-wedc">★</label>
+                                <input type="radio" id="star4-wedc" name="ClientRating" value="4"><label for="star4-wedc">★</label>
+                                <input type="radio" id="star3-wedc" name="ClientRating" value="3"><label for="star3-wedc">★</label>
+                                <input type="radio" id="star2-wedc" name="ClientRating" value="2"><label for="star2-wedc">★</label>
+                                <input type="radio" id="star1-wedc" name="ClientRating" value="1"><label for="star1-wedc">★</label>
+                            </div>
+                            <label>How was the event organised?</label>
+                            <select name="Organisation">
+                                <option value="">-- Select --</option>
+                                <option value="Excellent">Excellent</option>
+                                <option value="Good">Good</option>
+                                <option value="Average">Average</option>
+                                <option value="Poor">Poor</option>
+                            </select>
+                            <label>Was payment made on time?</label>
+                            <select name="PaymentOnTime">
+                                <option value="">-- Select --</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Partially">Partially</option>
+                            </select>
+                            <label>Would you attend this type of event again?</label>
+                            <select name="WouldAttendAgain">
+                                <option value="">-- Select --</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Maybe">Maybe</option>
+                            </select>
+                            <label>Any comments or suggestions?</label>
+                            <textarea name="Comments" placeholder="Share your thoughts..."></textarea>
+                            <button type="submit">Submit Review</button>
+                            <div class="success-message" style="display:none;">✅ Thank you! Your review has been submitted.</div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Wedding Card -->
 
                 <!-- ── Completed Event: NBA DINNER ── -->
                 <div class="event-card completed">
@@ -787,10 +737,8 @@
                             <td>Thursday, 4th June 2026</td>
                         </tr>
                     </table>
-
                     <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
                     <button class="feedback-btn" onclick="toggleFeedback(this)">⭐ Leave a Review</button>
-
                     <div class="event-details" style="display:none;">
                         <table class="event-details-table">
                             <tr>
@@ -830,8 +778,6 @@
                             </tr>
                         </table>
                     </div>
-
-                    <!-- Feedback Form -->
                     <div class="feedback-form-wrapper" style="display:none;">
                         <h3>⭐ Share Your Experience</h3>
                         <form onsubmit="submitFeedback(event, this)">
@@ -840,29 +786,19 @@
                             <input type="text" name="FullName" required placeholder="Enter your full name">
                             <label>Overall Event Rating</label>
                             <div class="star-rating">
-                                <input type="radio" id="star5-nba" name="Rating" value="5"><label
-                                    for="star5-nba">★</label>
-                                <input type="radio" id="star4-nba" name="Rating" value="4"><label
-                                    for="star4-nba">★</label>
-                                <input type="radio" id="star3-nba" name="Rating" value="3"><label
-                                    for="star3-nba">★</label>
-                                <input type="radio" id="star2-nba" name="Rating" value="2"><label
-                                    for="star2-nba">★</label>
-                                <input type="radio" id="star1-nba" name="Rating" value="1"><label
-                                    for="star1-nba">★</label>
+                                <input type="radio" id="star5-nba" name="Rating" value="5"><label for="star5-nba">★</label>
+                                <input type="radio" id="star4-nba" name="Rating" value="4"><label for="star4-nba">★</label>
+                                <input type="radio" id="star3-nba" name="Rating" value="3"><label for="star3-nba">★</label>
+                                <input type="radio" id="star2-nba" name="Rating" value="2"><label for="star2-nba">★</label>
+                                <input type="radio" id="star1-nba" name="Rating" value="1"><label for="star1-nba">★</label>
                             </div>
                             <label>Client Rating</label>
                             <div class="star-rating">
-                                <input type="radio" id="star5-nbac" name="ClientRating" value="5"><label
-                                    for="star5-nbac">★</label>
-                                <input type="radio" id="star4-nbac" name="ClientRating" value="4"><label
-                                    for="star4-nbac">★</label>
-                                <input type="radio" id="star3-nbac" name="ClientRating" value="3"><label
-                                    for="star3-nbac">★</label>
-                                <input type="radio" id="star2-nbac" name="ClientRating" value="2"><label
-                                    for="star2-nbac">★</label>
-                                <input type="radio" id="star1-nbac" name="ClientRating" value="1"><label
-                                    for="star1-nbac">★</label>
+                                <input type="radio" id="star5-nbac" name="ClientRating" value="5"><label for="star5-nbac">★</label>
+                                <input type="radio" id="star4-nbac" name="ClientRating" value="4"><label for="star4-nbac">★</label>
+                                <input type="radio" id="star3-nbac" name="ClientRating" value="3"><label for="star3-nbac">★</label>
+                                <input type="radio" id="star2-nbac" name="ClientRating" value="2"><label for="star2-nbac">★</label>
+                                <input type="radio" id="star1-nbac" name="ClientRating" value="1"><label for="star1-nbac">★</label>
                             </div>
                             <label>How was the event organised?</label>
                             <select name="Organisation">
@@ -889,8 +825,7 @@
                             <label>Any comments or suggestions?</label>
                             <textarea name="Comments" placeholder="Share your thoughts..."></textarea>
                             <button type="submit">Submit Review</button>
-                            <div class="success-message" style="display:none;">✅ Thank you! Your review has been
-                                submitted.</div>
+                            <div class="success-message" style="display:none;">✅ Thank you! Your review has been submitted.</div>
                         </form>
                     </div>
                 </div>
@@ -916,10 +851,8 @@
                             <td>Tuesday, 2nd June 2026</td>
                         </tr>
                     </table>
-
                     <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
                     <button class="feedback-btn" onclick="toggleFeedback(this)">⭐ Leave a Review</button>
-
                     <div class="event-details" style="display:none;">
                         <table class="event-details-table">
                             <tr>
@@ -959,8 +892,6 @@
                             </tr>
                         </table>
                     </div>
-
-                    <!-- Feedback Form -->
                     <div class="feedback-form-wrapper" style="display:none;">
                         <h3>⭐ Share Your Experience</h3>
                         <form onsubmit="submitFeedback(event, this)">
@@ -969,29 +900,19 @@
                             <input type="text" name="FullName" required placeholder="Enter your full name">
                             <label>Overall Event Rating</label>
                             <div class="star-rating">
-                                <input type="radio" id="star5-wk1" name="Rating" value="5"><label
-                                    for="star5-wk1">★</label>
-                                <input type="radio" id="star4-wk1" name="Rating" value="4"><label
-                                    for="star4-wk1">★</label>
-                                <input type="radio" id="star3-wk1" name="Rating" value="3"><label
-                                    for="star3-wk1">★</label>
-                                <input type="radio" id="star2-wk1" name="Rating" value="2"><label
-                                    for="star2-wk1">★</label>
-                                <input type="radio" id="star1-wk1" name="Rating" value="1"><label
-                                    for="star1-wk1">★</label>
+                                <input type="radio" id="star5-wk1" name="Rating" value="5"><label for="star5-wk1">★</label>
+                                <input type="radio" id="star4-wk1" name="Rating" value="4"><label for="star4-wk1">★</label>
+                                <input type="radio" id="star3-wk1" name="Rating" value="3"><label for="star3-wk1">★</label>
+                                <input type="radio" id="star2-wk1" name="Rating" value="2"><label for="star2-wk1">★</label>
+                                <input type="radio" id="star1-wk1" name="Rating" value="1"><label for="star1-wk1">★</label>
                             </div>
                             <label>Client Rating</label>
                             <div class="star-rating">
-                                <input type="radio" id="star5-wk1c" name="ClientRating" value="5"><label
-                                    for="star5-wk1c">★</label>
-                                <input type="radio" id="star4-wk1c" name="ClientRating" value="4"><label
-                                    for="star4-wk1c">★</label>
-                                <input type="radio" id="star3-wk1c" name="ClientRating" value="3"><label
-                                    for="star3-wk1c">★</label>
-                                <input type="radio" id="star2-wk1c" name="ClientRating" value="2"><label
-                                    for="star2-wk1c">★</label>
-                                <input type="radio" id="star1-wk1c" name="ClientRating" value="1"><label
-                                    for="star1-wk1c">★</label>
+                                <input type="radio" id="star5-wk1c" name="ClientRating" value="5"><label for="star5-wk1c">★</label>
+                                <input type="radio" id="star4-wk1c" name="ClientRating" value="4"><label for="star4-wk1c">★</label>
+                                <input type="radio" id="star3-wk1c" name="ClientRating" value="3"><label for="star3-wk1c">★</label>
+                                <input type="radio" id="star2-wk1c" name="ClientRating" value="2"><label for="star2-wk1c">★</label>
+                                <input type="radio" id="star1-wk1c" name="ClientRating" value="1"><label for="star1-wk1c">★</label>
                             </div>
                             <label>How was the event organised?</label>
                             <select name="Organisation">
@@ -1018,8 +939,7 @@
                             <label>Any comments or suggestions?</label>
                             <textarea name="Comments" placeholder="Share your thoughts..."></textarea>
                             <button type="submit">Submit Review</button>
-                            <div class="success-message" style="display:none;">✅ Thank you! Your review has been
-                                submitted.</div>
+                            <div class="success-message" style="display:none;">✅ Thank you! Your review has been submitted.</div>
                         </form>
                     </div>
                 </div>
@@ -1045,10 +965,8 @@
                             <td>Wednesday, 3rd June 2026</td>
                         </tr>
                     </table>
-
                     <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
                     <button class="feedback-btn" onclick="toggleFeedback(this)">⭐ Leave a Review</button>
-
                     <div class="event-details" style="display:none;">
                         <table class="event-details-table">
                             <tr>
@@ -1088,8 +1006,6 @@
                             </tr>
                         </table>
                     </div>
-
-                    <!-- Feedback Form -->
                     <div class="feedback-form-wrapper" style="display:none;">
                         <h3>⭐ Share Your Experience</h3>
                         <form onsubmit="submitFeedback(event, this)">
@@ -1098,29 +1014,19 @@
                             <input type="text" name="FullName" required placeholder="Enter your full name">
                             <label>Overall Event Rating</label>
                             <div class="star-rating">
-                                <input type="radio" id="star5-cs1" name="Rating" value="5"><label
-                                    for="star5-cs1">★</label>
-                                <input type="radio" id="star4-cs1" name="Rating" value="4"><label
-                                    for="star4-cs1">★</label>
-                                <input type="radio" id="star3-cs1" name="Rating" value="3"><label
-                                    for="star3-cs1">★</label>
-                                <input type="radio" id="star2-cs1" name="Rating" value="2"><label
-                                    for="star2-cs1">★</label>
-                                <input type="radio" id="star1-cs1" name="Rating" value="1"><label
-                                    for="star1-cs1">★</label>
+                                <input type="radio" id="star5-cs1" name="Rating" value="5"><label for="star5-cs1">★</label>
+                                <input type="radio" id="star4-cs1" name="Rating" value="4"><label for="star4-cs1">★</label>
+                                <input type="radio" id="star3-cs1" name="Rating" value="3"><label for="star3-cs1">★</label>
+                                <input type="radio" id="star2-cs1" name="Rating" value="2"><label for="star2-cs1">★</label>
+                                <input type="radio" id="star1-cs1" name="Rating" value="1"><label for="star1-cs1">★</label>
                             </div>
                             <label>Client Rating</label>
                             <div class="star-rating">
-                                <input type="radio" id="star5-cs1c" name="ClientRating" value="5"><label
-                                    for="star5-cs1c">★</label>
-                                <input type="radio" id="star4-cs1c" name="ClientRating" value="4"><label
-                                    for="star4-cs1c">★</label>
-                                <input type="radio" id="star3-cs1c" name="ClientRating" value="3"><label
-                                    for="star3-cs1c">★</label>
-                                <input type="radio" id="star2-cs1c" name="ClientRating" value="2"><label
-                                    for="star2-cs1c">★</label>
-                                <input type="radio" id="star1-cs1c" name="ClientRating" value="1"><label
-                                    for="star1-cs1c">★</label>
+                                <input type="radio" id="star5-cs1c" name="ClientRating" value="5"><label for="star5-cs1c">★</label>
+                                <input type="radio" id="star4-cs1c" name="ClientRating" value="4"><label for="star4-cs1c">★</label>
+                                <input type="radio" id="star3-cs1c" name="ClientRating" value="3"><label for="star3-cs1c">★</label>
+                                <input type="radio" id="star2-cs1c" name="ClientRating" value="2"><label for="star2-cs1c">★</label>
+                                <input type="radio" id="star1-cs1c" name="ClientRating" value="1"><label for="star1-cs1c">★</label>
                             </div>
                             <label>How was the event organised?</label>
                             <select name="Organisation">
@@ -1147,8 +1053,7 @@
                             <label>Any comments or suggestions?</label>
                             <textarea name="Comments" placeholder="Share your thoughts..."></textarea>
                             <button type="submit">Submit Review</button>
-                            <div class="success-message" style="display:none;">✅ Thank you! Your review has been
-                                submitted.</div>
+                            <div class="success-message" style="display:none;">✅ Thank you! Your review has been submitted.</div>
                         </form>
                     </div>
                 </div>
@@ -1174,10 +1079,8 @@
                             <td>Wednesday, 27th May, 2026</td>
                         </tr>
                     </table>
-
                     <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
                     <button class="feedback-btn" onclick="toggleFeedback(this)">⭐ Leave a Review</button>
-
                     <div class="event-details" style="display:none;">
                         <table class="event-details-table">
                             <tr>
@@ -1186,8 +1089,7 @@
                             </tr>
                             <tr>
                                 <th>Dress Code</th>
-                                <td>Plain White T-shirt and Black Trouser. Accessory: Tie will be provided upon
-                                    arrival</td>
+                                <td>Plain White T-shirt and Black Trouser. Accessory: Tie will be provided upon arrival</td>
                             </tr>
                             <tr>
                                 <th>Expected Time of Arrival</th>
@@ -1219,7 +1121,6 @@
                             </tr>
                         </table>
                     </div>
-
                     <div class="feedback-form-wrapper" style="display:none;">
                         <h3>⭐ Share Your Experience</h3>
                         <form onsubmit="submitFeedback(event, this)">
@@ -1228,29 +1129,19 @@
                             <input type="text" name="FullName" required placeholder="Enter your full name">
                             <label>Overall Event Rating</label>
                             <div class="star-rating">
-                                <input type="radio" id="star5-al1" name="Rating" value="5"><label
-                                    for="star5-al1">★</label>
-                                <input type="radio" id="star4-al1" name="Rating" value="4"><label
-                                    for="star4-al1">★</label>
-                                <input type="radio" id="star3-al1" name="Rating" value="3"><label
-                                    for="star3-al1">★</label>
-                                <input type="radio" id="star2-al1" name="Rating" value="2"><label
-                                    for="star2-al1">★</label>
-                                <input type="radio" id="star1-al1" name="Rating" value="1"><label
-                                    for="star1-al1">★</label>
+                                <input type="radio" id="star5-al1" name="Rating" value="5"><label for="star5-al1">★</label>
+                                <input type="radio" id="star4-al1" name="Rating" value="4"><label for="star4-al1">★</label>
+                                <input type="radio" id="star3-al1" name="Rating" value="3"><label for="star3-al1">★</label>
+                                <input type="radio" id="star2-al1" name="Rating" value="2"><label for="star2-al1">★</label>
+                                <input type="radio" id="star1-al1" name="Rating" value="1"><label for="star1-al1">★</label>
                             </div>
                             <label>Client Rating</label>
                             <div class="star-rating">
-                                <input type="radio" id="star5-al1c" name="ClientRating" value="5"><label
-                                    for="star5-al1c">★</label>
-                                <input type="radio" id="star4-al1c" name="ClientRating" value="4"><label
-                                    for="star4-al1c">★</label>
-                                <input type="radio" id="star3-al1c" name="ClientRating" value="3"><label
-                                    for="star3-al1c">★</label>
-                                <input type="radio" id="star2-al1c" name="ClientRating" value="2"><label
-                                    for="star2-al1c">★</label>
-                                <input type="radio" id="star1-al1c" name="ClientRating" value="1"><label
-                                    for="star1-al1c">★</label>
+                                <input type="radio" id="star5-al1c" name="ClientRating" value="5"><label for="star5-al1c">★</label>
+                                <input type="radio" id="star4-al1c" name="ClientRating" value="4"><label for="star4-al1c">★</label>
+                                <input type="radio" id="star3-al1c" name="ClientRating" value="3"><label for="star3-al1c">★</label>
+                                <input type="radio" id="star2-al1c" name="ClientRating" value="2"><label for="star2-al1c">★</label>
+                                <input type="radio" id="star1-al1c" name="ClientRating" value="1"><label for="star1-al1c">★</label>
                             </div>
                             <label>How was the event organised?</label>
                             <select name="Organisation">
@@ -1277,8 +1168,7 @@
                             <label>Any comments or suggestions?</label>
                             <textarea name="Comments" placeholder="Share your thoughts..."></textarea>
                             <button type="submit">Submit Review</button>
-                            <div class="success-message" style="display:none;">✅ Thank you! Your review has been
-                                submitted.</div>
+                            <div class="success-message" style="display:none;">✅ Thank you! Your review has been submitted.</div>
                         </form>
                     </div>
                 </div>
@@ -1304,10 +1194,8 @@
                             <td>Thursday, 28th May, 2026</td>
                         </tr>
                     </table>
-
                     <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
                     <button class="feedback-btn" onclick="toggleFeedback(this)">⭐ Leave a Review</button>
-
                     <div class="event-details" style="display:none;">
                         <table class="event-details-table">
                             <tr>
@@ -1349,7 +1237,6 @@
                             </tr>
                         </table>
                     </div>
-
                     <div class="feedback-form-wrapper" style="display:none;">
                         <h3>⭐ Share Your Experience</h3>
                         <form onsubmit="submitFeedback(event, this)">
@@ -1358,29 +1245,19 @@
                             <input type="text" name="FullName" required placeholder="Enter your full name">
                             <label>Overall Event Rating</label>
                             <div class="star-rating">
-                                <input type="radio" id="star5-ae1" name="Rating" value="5"><label
-                                    for="star5-ae1">★</label>
-                                <input type="radio" id="star4-ae1" name="Rating" value="4"><label
-                                    for="star4-ae1">★</label>
-                                <input type="radio" id="star3-ae1" name="Rating" value="3"><label
-                                    for="star3-ae1">★</label>
-                                <input type="radio" id="star2-ae1" name="Rating" value="2"><label
-                                    for="star2-ae1">★</label>
-                                <input type="radio" id="star1-ae1" name="Rating" value="1"><label
-                                    for="star1-ae1">★</label>
+                                <input type="radio" id="star5-ae1" name="Rating" value="5"><label for="star5-ae1">★</label>
+                                <input type="radio" id="star4-ae1" name="Rating" value="4"><label for="star4-ae1">★</label>
+                                <input type="radio" id="star3-ae1" name="Rating" value="3"><label for="star3-ae1">★</label>
+                                <input type="radio" id="star2-ae1" name="Rating" value="2"><label for="star2-ae1">★</label>
+                                <input type="radio" id="star1-ae1" name="Rating" value="1"><label for="star1-ae1">★</label>
                             </div>
                             <label>Client Rating</label>
                             <div class="star-rating">
-                                <input type="radio" id="star5-ae1c" name="ClientRating" value="5"><label
-                                    for="star5-ae1c">★</label>
-                                <input type="radio" id="star4-ae1c" name="ClientRating" value="4"><label
-                                    for="star4-ae1c">★</label>
-                                <input type="radio" id="star3-ae1c" name="ClientRating" value="3"><label
-                                    for="star3-ae1c">★</label>
-                                <input type="radio" id="star2-ae1c" name="ClientRating" value="2"><label
-                                    for="star2-ae1c">★</label>
-                                <input type="radio" id="star1-ae1c" name="ClientRating" value="1"><label
-                                    for="star1-ae1c">★</label>
+                                <input type="radio" id="star5-ae1c" name="ClientRating" value="5"><label for="star5-ae1c">★</label>
+                                <input type="radio" id="star4-ae1c" name="ClientRating" value="4"><label for="star4-ae1c">★</label>
+                                <input type="radio" id="star3-ae1c" name="ClientRating" value="3"><label for="star3-ae1c">★</label>
+                                <input type="radio" id="star2-ae1c" name="ClientRating" value="2"><label for="star2-ae1c">★</label>
+                                <input type="radio" id="star1-ae1c" name="ClientRating" value="1"><label for="star1-ae1c">★</label>
                             </div>
                             <label>How was the event organised?</label>
                             <select name="Organisation">
@@ -1407,8 +1284,7 @@
                             <label>Any comments or suggestions?</label>
                             <textarea name="Comments" placeholder="Share your thoughts..."></textarea>
                             <button type="submit">Submit Review</button>
-                            <div class="success-message" style="display:none;">✅ Thank you! Your review has been
-                                submitted.</div>
+                            <div class="success-message" style="display:none;">✅ Thank you! Your review has been submitted.</div>
                         </form>
                     </div>
                 </div>
@@ -1434,10 +1310,8 @@
                             <td>May 09, 2026</td>
                         </tr>
                     </table>
-
                     <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
                     <button class="feedback-btn" onclick="toggleFeedback(this)">⭐ Leave a Review</button>
-
                     <div class="event-details" style="display:none;">
                         <table class="event-details-table">
                             <tr>
@@ -1478,7 +1352,6 @@
                             </tr>
                         </table>
                     </div>
-
                     <div class="feedback-form-wrapper" style="display:none;">
                         <h3>⭐ Share Your Experience</h3>
                         <form onsubmit="submitFeedback(event, this)">
@@ -1495,16 +1368,11 @@
                             </div>
                             <label>Client Rating</label>
                             <div class="star-rating">
-                                <input type="radio" id="star5b" name="ClientRating" value="5"><label
-                                    for="star5b">★</label>
-                                <input type="radio" id="star4b" name="ClientRating" value="4"><label
-                                    for="star4b">★</label>
-                                <input type="radio" id="star3b" name="ClientRating" value="3"><label
-                                    for="star3b">★</label>
-                                <input type="radio" id="star2b" name="ClientRating" value="2"><label
-                                    for="star2b">★</label>
-                                <input type="radio" id="star1b" name="ClientRating" value="1"><label
-                                    for="star1b">★</label>
+                                <input type="radio" id="star5b" name="ClientRating" value="5"><label for="star5b">★</label>
+                                <input type="radio" id="star4b" name="ClientRating" value="4"><label for="star4b">★</label>
+                                <input type="radio" id="star3b" name="ClientRating" value="3"><label for="star3b">★</label>
+                                <input type="radio" id="star2b" name="ClientRating" value="2"><label for="star2b">★</label>
+                                <input type="radio" id="star1b" name="ClientRating" value="1"><label for="star1b">★</label>
                             </div>
                             <label>How was the event organised?</label>
                             <select name="Organisation">
@@ -1531,8 +1399,7 @@
                             <label>Any comments or suggestions?</label>
                             <textarea name="Comments" placeholder="Share your thoughts..."></textarea>
                             <button type="submit">Submit Review</button>
-                            <div class="success-message" style="display:none;">✅ Thank you! Your review has been
-                                submitted.</div>
+                            <div class="success-message" style="display:none;">✅ Thank you! Your review has been submitted.</div>
                         </form>
                     </div>
                 </div>
@@ -1547,7 +1414,6 @@
     <script>
         const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyDqPXkO1ryGwIPWCJZblRg_HD8iSIAliZsUykNnsfeLZEeePb8IafSkp-WGEH6BEE4Wg/exec";
 
-        /* ── Show/Hide Sections ── */
         function showSection(section, btn) {
             document.getElementById('section-upcoming').style.display = section === 'upcoming' ? 'block' : 'none';
             document.getElementById('section-past').style.display = section === 'past' ? 'block' : 'none';
@@ -1555,7 +1421,6 @@
             btn.classList.add('active');
         }
 
-        /* ── Toggle Event Details ── */
         function toggleDetails(btn) {
             let detailsDiv = null;
             let sibling = btn.nextElementSibling;
@@ -1572,7 +1437,6 @@
             btn.textContent = isOpen ? 'View Details' : 'Hide Details';
         }
 
-        /* ── Toggle Feedback Form ── */
         function toggleFeedback(btn) {
             const card = btn.closest('.event-card');
             const feedbackWrapper = card.querySelector('.feedback-form-wrapper');
@@ -1581,7 +1445,6 @@
             btn.textContent = isOpen ? '⭐ Leave a Review' : '✖ Close Review';
         }
 
-        /* ── Show Interest Form ── */
         function showInterestForm(btn, isYes) {
             const section = btn.closest('.interest-section');
             const form = section.querySelector('.interest-form');
@@ -1594,17 +1457,14 @@
             }
         }
 
-        /* ── Submit Interest Form ── */
         function submitInterestForm(event, form) {
             event.preventDefault();
             const eventValue = form.querySelector('input[name="Event"]').value;
             const fullName = form.querySelector('input[name="FullName"]').value;
             const address = form.querySelector('input[name="Address"]').value;
             const submitBtn = form.querySelector('button[type="submit"]');
-
             submitBtn.disabled = true;
             submitBtn.textContent = "Submitting...";
-
             fetch(WEB_APP_URL, {
                 method: "POST",
                 mode: "no-cors",
@@ -1629,7 +1489,6 @@
             });
         }
 
-        /* ── Submit Feedback Form ── */
         function submitFeedback(event, form) {
             event.preventDefault();
             const eventValue = form.querySelector('input[name="Event"]').value;
@@ -1640,11 +1499,9 @@
             const paymentOnTime = form.querySelector('select[name="PaymentOnTime"]').value;
             const wouldAttend = form.querySelector('select[name="WouldAttendAgain"]').value;
             const comments = form.querySelector('textarea[name="Comments"]').value;
-
             const submitBtn = form.querySelector('button[type="submit"]');
             submitBtn.disabled = true;
             submitBtn.textContent = "Submitting...";
-
             fetch(WEB_APP_URL, {
                 method: "POST",
                 mode: "no-cors",
@@ -1680,5 +1537,4 @@
         }
     </script>
 </body>
-
 </html>
