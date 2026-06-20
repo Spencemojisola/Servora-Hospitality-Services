@@ -406,7 +406,100 @@
             <div class="section-header">Upcoming Events</div>
             <div class="event-list">
 
-                <!-- ── Upcoming Event: PRIVATE MEETING ── -->
+                <!-- ── Upcoming Event: JCI FREE HEALTH CARE ── -->
+
+                <div class="event-card">
+                    <div class="event-title">
+                        JCI ODUA HEALTH WISE
+                        <span class="status-badge tbd">Open</span>
+                    </div>
+                    <table class="event-summary-table">
+                        <tr>
+                            <th>Location</th>
+                            <td>Ibadan</td>
+                        </tr>
+
+                        <tr>
+                            <th>Venue</th>
+                            <td>Ologuneru Primary Health Centre, Ibadan</td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td>Friday, 26th June 2026</td>
+                        </tr>
+
+                        <tr>
+                            <th>Please note</th>
+                            <td>People who live at close proximity to the venue are encouraged to apply and will be
+                                given preference.</td>
+                        </tr>
+                        <tr>
+                            <th>Number of Staff Needed</th>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                    <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
+                    <div class="event-details" style="display:none;">
+                        <table class="event-details-table">
+                            <tr>
+                                <th>Compensation</th>
+                                <td>N6,000 (transportation included)</td>
+                            </tr>
+                            <tr>
+                                <th>Dress Code</th>
+                                <td>White Plain Roundneck and Blue Jeans and sneakers</td>
+                            </tr>
+                            <tr>
+                                <th>Expected Time of Arrival</th>
+                                <td>8:00 AM</td>
+                            </tr>
+                            <tr>
+                                <th>Event Type</th>
+                                <td>Community Health</td>
+                            </tr>
+                            <tr>
+                                <th>Job Type</th>
+                                <td>Event Coordinators</td>
+                            </tr>
+                            <tr>
+                                <th>Job Description</th>
+                                <td>Maintain a professional appearance and attitude, <br> assist with guest management
+                                    and event coordination, <br> support the smooth delivery of the JCI community
+                                    healthcare program, and uphold the highest standards of hospitality and
+                                    professionalism throughout the event.</td>
+                            </tr>
+
+                            <tr>
+                                <th>Important Notice</th>
+                                <td>This assignment is part of Servora's corporate social responsibility initiative in
+                                    support of a community healthcare outreach program. <br> As the engagement is being
+                                    undertaken on a volunteer-support basis, the compensation for this role is below
+                                    Servora's standard market rate for Event Coordinators. <br> By accepting this
+                                    assignment, you acknowledge and agree to the stated compensation while contributing
+                                    to a meaningful cause that positively impacts the community.</td>
+                            </tr>
+                        </table>
+                        <div class="interest-section">
+                            <div class="interest-options">
+                                <span>Are you interested?</span>
+                                <button class="interest-btn" onclick="showInterestForm(this, true)">Yes</button>
+                                <button class="interest-btn-noo" onclick="showInterestForm(this, false)">No</button>
+                            </div>
+                            <form class="interest-form" style="display:none;"
+                                onsubmit="submitInterestForm(event, this)">
+                                <input type="hidden" name="Event" value="Signature">
+                                <label>Full Name</label>
+                                <input type="text" name="FullName" required>
+                                <label>Address</label>
+                                <input type="text" name="Address" required>
+                                <button type="submit">Submit</button>
+                                <div class="success-message" style="display:none;">
+                                    Thank you! Your interest has been sent to the admin.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
                 <!-- <div class="event-card">
                     <div class="event-title">
                         COMMISSIONING SIGNATURE HOTEL & ELETA EYE CLINIC
@@ -492,7 +585,7 @@
                     </div>
                 </div> -->
                 <!-- End Signature Card -->
-                
+
 
             </div>
         </div>
