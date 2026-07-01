@@ -408,7 +408,7 @@
 
                 <!-- ── Upcoming Event: JCI FREE HEALTH CARE ── -->
 
-                <div class="event-card">
+                <!-- <div class="event-card">
                     <div class="event-title">
                         JCI ODUA HEALTH WISE
                         <span class="status-badge tbd">Open</span>
@@ -499,92 +499,10 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
 
-                 <!-- ── Upcoming Event: KFL Dinner ── -->
 
-                <div class="event-card">
-                    <div class="event-title">
-                        KFL DINNER
-                        <span class="status-badge tbd">Open</span>
-                    </div>
-                    <table class="event-summary-table">
-                        <tr>
-                            <th>Location</th>
-                            <td>Ibadan</td>
-                        </tr>
-                        <tr>
-                            <th>Venue</th>
-                            <td>Agape Christian Ministries, 6 Aluko Street, Felele Ibadan</td>
-                        </tr>
-                        <tr>
-                            <th>Date</th>
-                            <td>Saturday, 27th June 2026</td>
-                        </tr>
-                        <tr>
-                            <th>Please note</th>
-                            <td>People who live at close proximity to the venue are encouraged to apply and will be
-                                given preference.</td>
-                        </tr>
-                        <tr>
-                            <th>Number of Staff Needed</th>
-                            <td>6</td>
-                        </tr>
-                    </table>
-                    <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
-                    <div class="event-details" style="display:none;">
-                        <table class="event-details-table">
-                            <tr>
-                                <th>Amount</th>
-                                <td>N7,000 (transportation included)</td>
-                            </tr>
-                            <tr>
-                                <th>Dress Code</th>
-                                <td>Plain white shirt and black pant. other accessories will be given.</td>
-                            </tr>
-                            <tr>
-                                <th>Expected Time of Arrival</th>
-                                <td>3:45 PM</td>
-                            </tr>
-                            <tr>
-                                <th>Event Type</th>
-                                <td>Dinner</td>
-                            </tr>
-                            <tr>
-                                <th>Job Type</th>
-                                <td>Event Servers</td>
-                            </tr>
-                            <tr>
-                                <th>Job Description</th>
-                                <td>Serve food to guests in a polite and professional manner. Responsibilities include
-                                    replenishing food as needed, clearing used dishes from tables, maintaining
-                                    cleanliness around dining areas, adhering to food safety standards, and coordinating
-                                    with the catering team to ensure smooth and timely service.</td>
-                            </tr>
-                        </table>
-                        <div class="interest-section">
-                            <div class="interest-options">
-                                <span>Are you interested?</span>
-                                <button class="interest-btn" onclick="showInterestForm(this, true)">Yes</button>
-                                <button class="interest-btn-noo" onclick="showInterestForm(this, false)">No</button>
-                            </div>
-                            <form class="interest-form" style="display:none;"
-                                onsubmit="submitInterestForm(event, this)">
-                                <input type="hidden" name="Event" value="KFL Dinner">
-                                <label>Full Name</label>
-                                <input type="text" name="FullName" required>
-                                <label>Address</label>
-                                <input type="text" name="Address" required>
-                                <button type="submit">Submit</button>
-                                <div class="success-message" style="display:none;">
-                                    Thank you! Your interest has been sent to the admin.
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <!-- End KFL Dinner Card -->
 
 
             </div>
@@ -599,7 +517,269 @@
             <div class="section-header past">Past Events & Reviews</div>
             <div class="event-list">
 
-                <!-- ── Completed Event: PRIVATE MEETING ── -->
+                <!-- ── Completed Event: JCI ODUA HEALTH WISE ── -->
+
+
+                <div class="event-card completed">
+                    <div class="event-title">
+                        JCI ODUA HEALTH WISE –
+                        <span class="status-badge completed">✔ Completed</span>
+                    </div>
+                    <table class="event-summary-table">
+                        <tr>
+                            <th>Location</th>
+                            <td>Ibadan</td>
+                        </tr>
+                        <tr>
+                            <th>Venue</th>
+                            <td>Ologuneru Primary Health Centre, Ibadan</td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td>Friday, 26th June 2026</td>
+                        </tr>
+                    </table>
+
+                    <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
+                    <button class="feedback-btn" onclick="toggleFeedback(this)">⭐ Leave a Review</button>
+
+                    <div class="event-details" style="display:none;">
+                        <table class="event-details-table">
+                            <tr>
+                                <th>Amount</th>
+                                <td>N6,000 (transportation included)</td>
+                            </tr>
+                            <tr>
+                                <th>Dress Code</th>
+                                <td>White Plain Roundneck and Ankara baggy trousers and sneakers</td>
+                            </tr>
+                            <tr>
+                                <th>Expected Time of Arrival</th>
+                                <td>8:00 AM</td>
+                            </tr>
+
+                            <tr>
+                                <th>Event Type</th>
+                                <td>Community Health</td>
+                            </tr>
+                            <tr>
+                                <th>Job Type</th>
+                                <td>Event Coordinatorsd>
+                            </tr>
+                            <tr>
+                                <th>Job Description</th>
+                                <td>Maintain a professional appearance and attitude, <br> assist with guest management
+                                    and event coordination, <br> support the smooth delivery of the JCI community
+                                    healthcare program, and uphold the highest standards of hospitality and
+                                    professionalism throughout the event.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Staff Used</th>
+                                <td>2</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Feedback Form -->
+                    <div class="feedback-form-wrapper" style="display:none;">
+                        <h3>⭐ Share Your Experience</h3>
+                        <form onsubmit="submitFeedback(event, this)">
+                            <input type="hidden" name="Event"
+                                value="Community Health – Ologuneru Health Center, Ibadan – 26th June 2026">
+                            <label>Full Name</label>
+                            <input type="text" name="FullName" required placeholder="Enter your full name">
+                            <label>Overall Event Rating</label>
+                            <div class="star-rating">
+                                <input type="radio" id="star5-wed" name="Rating" value="5"><label
+                                    for="star5-wed">★</label>
+                                <input type="radio" id="star4-wed" name="Rating" value="4"><label
+                                    for="star4-wed">★</label>
+                                <input type="radio" id="star3-wed" name="Rating" value="3"><label
+                                    for="star3-wed">★</label>
+                                <input type="radio" id="star2-wed" name="Rating" value="2"><label
+                                    for="star2-wed">★</label>
+                                <input type="radio" id="star1-wed" name="Rating" value="1"><label
+                                    for="star1-wed">★</label>
+                            </div>
+                            <label>Client Rating</label>
+                            <div class="star-rating">
+                                <input type="radio" id="star5-wedc" name="ClientRating" value="5"><label
+                                    for="star5-wedc">★</label>
+                                <input type="radio" id="star4-wedc" name="ClientRating" value="4"><label
+                                    for="star4-wedc">★</label>
+                                <input type="radio" id="star3-wedc" name="ClientRating" value="3"><label
+                                    for="star3-wedc">★</label>
+                                <input type="radio" id="star2-wedc" name="ClientRating" value="2"><label
+                                    for="star2-wedc">★</label>
+                                <input type="radio" id="star1-wedc" name="ClientRating" value="1"><label
+                                    for="star1-wedc">★</label>
+                            </div>
+                            <label>How was the event organised?</label>
+                            <select name="Organisation">
+                                <option value="">-- Select --</option>
+                                <option value="Excellent">Excellent</option>
+                                <option value="Good">Good</option>
+                                <option value="Average">Average</option>
+                                <option value="Poor">Poor</option>
+                            </select>
+                            <label>Was payment made on time?</label>
+                            <select name="PaymentOnTime">
+                                <option value="">-- Select --</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Partially">Partially</option>
+                            </select>
+                            <label>Would you attend this type of event again?</label>
+                            <select name="WouldAttendAgain">
+                                <option value="">-- Select --</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Maybe">Maybe</option>
+                            </select>
+                            <label>Any comments or suggestions?</label>
+                            <textarea name="Comments" placeholder="Share your thoughts..."></textarea>
+                            <button type="submit">Submit Review</button>
+                            <div class="success-message" style="display:none;">✅ Thank you! Your review has been
+                                submitted.</div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <!-- ── Completed Event: KFLC DINNER ── -->
+
+
+
+                <div class="event-card completed">
+                    <div class="event-title">
+                        KFLC Dinner –
+                        <span class="status-badge completed">✔ Completed</span>
+                    </div>
+                    <table class="event-summary-table">
+                        <tr>
+                            <th>Location</th>
+                            <td>Ibadan</td>
+                        </tr>
+                        <tr>
+                            <th>Venue</th>
+                            <td>Agape Christian Ministries, 6 Aluko Street, Felele Ibadan</td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td>Tuesday, 27th June 2026</td>
+                        </tr>
+                    </table>
+
+                    <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
+                    <button class="feedback-btn" onclick="toggleFeedback(this)">⭐ Leave a Review</button>
+
+                    <div class="event-details" style="display:none;">
+                        <table class="event-details-table">
+                            <tr>
+                                <th>Amount</th>
+                                <td>N7,000 (transportation included)</td>
+                            </tr>
+                            <tr>
+                                <th>Dress Code</th>
+                                <td>Plain white shirt and black pant. other accessories will be given.</td>
+                            </tr>
+                            <tr>
+                                <th>Expected Time of Arrival</th>
+                                <td>3:45 AM</td>
+                            </tr>
+
+                            <tr>
+                                <th>Event Type</th>
+                                <td>Dinner</td>
+                            </tr>
+                            <tr>
+                                <th>Job Type</th>
+                                <td>Event Servers</td>
+                            </tr>
+                            <tr>
+                                <th>Job Description</th>
+                                <td>Serve food to guests in a polite and professional manner. Responsibilities
+                                    include
+                                    replenishing food as needed, clearing used dishes from tables, maintaining
+                                    cleanliness around dining areas, adhering to food safety standards, and
+                                    coordinating
+                                    with the catering team to ensure smooth and timely service.</td>
+                            </tr>
+                            <tr>
+                                <th>Staff Used</th>
+                                <td>6</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Feedback Form -->
+                    <div class="feedback-form-wrapper" style="display:none;">
+                        <h3>⭐ Share Your Experience</h3>
+                        <form onsubmit="submitFeedback(event, this)">
+                            <input type="hidden" name="Event"
+                                value="Dinner – Agape Christian Ministries, 6 Aluko Street, Felele Ibadan – 27th June 2026">
+                            <label>Full Name</label>
+                            <input type="text" name="FullName" required placeholder="Enter your full name">
+                            <label>Overall Event Rating</label>
+                            <div class="star-rating">
+                                <input type="radio" id="star5-wed" name="Rating" value="5"><label
+                                    for="star5-wed">★</label>
+                                <input type="radio" id="star4-wed" name="Rating" value="4"><label
+                                    for="star4-wed">★</label>
+                                <input type="radio" id="star3-wed" name="Rating" value="3"><label
+                                    for="star3-wed">★</label>
+                                <input type="radio" id="star2-wed" name="Rating" value="2"><label
+                                    for="star2-wed">★</label>
+                                <input type="radio" id="star1-wed" name="Rating" value="1"><label
+                                    for="star1-wed">★</label>
+                            </div>
+                            <label>Client Rating</label>
+                            <div class="star-rating">
+                                <input type="radio" id="star5-wedc" name="ClientRating" value="5"><label
+                                    for="star5-wedc">★</label>
+                                <input type="radio" id="star4-wedc" name="ClientRating" value="4"><label
+                                    for="star4-wedc">★</label>
+                                <input type="radio" id="star3-wedc" name="ClientRating" value="3"><label
+                                    for="star3-wedc">★</label>
+                                <input type="radio" id="star2-wedc" name="ClientRating" value="2"><label
+                                    for="star2-wedc">★</label>
+                                <input type="radio" id="star1-wedc" name="ClientRating" value="1"><label
+                                    for="star1-wedc">★</label>
+                            </div>
+                            <label>How was the event organised?</label>
+                            <select name="Organisation">
+                                <option value="">-- Select --</option>
+                                <option value="Excellent">Excellent</option>
+                                <option value="Good">Good</option>
+                                <option value="Average">Average</option>
+                                <option value="Poor">Poor</option>
+                            </select>
+                            <label>Was payment made on time?</label>
+                            <select name="PaymentOnTime">
+                                <option value="">-- Select --</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Partially">Partially</option>
+                            </select>
+                            <label>Would you attend this type of event again?</label>
+                            <select name="WouldAttendAgain">
+                                <option value="">-- Select --</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Maybe">Maybe</option>
+                            </select>
+                            <label>Any comments or suggestions?</label>
+                            <textarea name="Comments" placeholder="Share your thoughts..."></textarea>
+                            <button type="submit">Submit Review</button>
+                            <div class="success-message" style="display:none;">✅ Thank you! Your review has been
+                                submitted.</div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <!-- ── Completed Event: COMMISSIONING SIGNATURE & ELETA EYE CLINIC ── -->
 
                 <div class="event-card completed">
                     <div class="event-title">
