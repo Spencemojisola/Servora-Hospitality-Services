@@ -411,7 +411,7 @@
 
                 <div class="event-card">
                     <div class="event-title">
-                        NEW EVENT
+                       Retirement & Birthday Celebration
                         <span class="status-badge tbd">Open</span>
                     </div>
                     <table class="event-summary-table">
@@ -421,12 +421,12 @@
                         </tr>
 
                         <tr>
-                            <th>venue</th>
-                            <td>JOGOR</td>
+                            <th>Venue</th>
+                            <td>Royal Event Centre, Ashi, Bodija</td>
                         </tr>
                         <tr>
                             <th>Date</th>
-                            <td>Thursday, 27th August 2026</td>
+                            <td>Saturday, 10th October, 2026</td>
                         </tr>
 
                         <tr>
@@ -436,7 +436,7 @@
                         </tr>
                         <tr>
                             <th>Number of Staff Needed</th>
-                            <td>5</td>
+                            <td>20</td>
                         </tr>
                     </table>
                     <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
@@ -452,9 +452,9 @@
                             </tr>
                             <tr>
                                 <th>Expected Time of Arrival</th>
-                                <td>To be communicated on the whatsapp group</td>
+                                <td>10:00am</td>
                             </tr>
-                            
+
                             <tr>
                                 <th>Job Type</th>
                                 <td>Event Waiters</td>
@@ -479,7 +479,96 @@
                             </div>
                             <form class="interest-form" style="display:none;"
                                 onsubmit="submitInterestForm(event, this)">
-                                <input type="hidden" name="Event" value="New event">
+                                <input type="hidden" name="Event" value="Retirement & Birthday">
+                                <label>Full Name</label>
+                                <input type="text" name="FullName" required>
+                                <label>Address</label>
+                                <input type="text" name="Address" required>
+                                <button type="submit">Submit</button>
+                                <div class="success-message" style="display:none;">
+                                    Thank you! Your interest has been sent to the admin.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- ── Upcoming Event: New Event P&G Event ── -->
+
+
+                <div class="event-card">
+                    <div class="event-title">
+                       Wedding
+                        <span class="status-badge tbd">Open</span>
+                    </div>
+                    <table class="event-summary-table">
+                        <tr>
+                            <th>Location</th>
+                            <td>Ibadan</td>
+                        </tr>
+
+                        <tr>
+                            <th>Venue</th>
+                            <td>P & G Event Centre, Odo-ona Kekere</td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td>Saturday, 17th October, 2026</td>
+                        </tr>
+
+                        <tr>
+                            <th>Please note</th>
+                            <td>People who live at close proximity to the venue are encouraged to apply and will be
+                                given preference.</td>
+                        </tr>
+                        <tr>
+                            <th>Number of Staff Needed</th>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                    <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
+                    <div class="event-details" style="display:none;">
+                        <table class="event-details-table">
+                            <tr>
+                                <th>Wage</th>
+                                <td>N7,000 (transportation included)</td>
+                            </tr>
+                            <tr>
+                                <th>Dress Code</th>
+                                <td>White shirt and Black trouser</td>
+                            </tr>
+                            <tr>
+                                <th>Expected Time of Arrival</th>
+                                <td>To be communicated on whatsapp</td>
+                            </tr>
+
+                            <tr>
+                                <th>Job Type</th>
+                                <td>Event Waiters</td>
+                            </tr>
+                            <tr>
+                                <th>Job Description</th>
+                                <td>Serve food to guests in a polite and professional manner. Responsibilities
+                                    include
+                                    replenishing food as needed, clearing used dishes from tables, maintaining
+                                    cleanliness around dining areas, adhering to food safety standards, and
+                                    coordinating
+                                    with the catering team to ensure smooth and timely service.</td>
+                            </tr>
+
+
+                        </table>
+                        <div class="interest-section">
+                            <div class="interest-options">
+                                <span>Are you interested?</span>
+                                <button class="interest-btn" onclick="showInterestForm(this, true)">Yes</button>
+                                <button class="interest-btn-noo" onclick="showInterestForm(this, false)">No</button>
+                            </div>
+                            <form class="interest-form" style="display:none;"
+                                onsubmit="submitInterestForm(event, this)">
+                                <input type="hidden" name="Event" value="Wedding">
                                 <label>Full Name</label>
                                 <input type="text" name="FullName" required>
                                 <label>Address</label>
@@ -496,7 +585,6 @@
             </div>
         </div>
 
-        <!-- End Upcoming Section -->
 
         <!-- ════════════════════════════
              PAST EVENTS SECTION
@@ -505,8 +593,138 @@
             <div class="section-header past">Past Events & Reviews</div>
             <div class="event-list">
 
+                <!-- ── Completed Event Lucnh - Ministry of tourism ── -->
 
-                 <!-- ── Completed Event Thanksgiving Service ── -->
+                <div class="event-card completed">
+                    <div class="event-title">
+                        Lunch - Ministry of Tourism –
+                        <span class="status-badge completed">✔ Completed</span>
+                    </div>
+                    <table class="event-summary-table">
+                        <tr>
+                            <th>Location</th>
+                            <td>Ibadan</td>
+                        </tr>
+                        <tr>
+                            <th>Venue</th>
+                            <td>Felicia Hall, Jogor</td>
+                        </tr>
+
+                        <tr>
+                            <th>Date</th>
+                            <td>Thursday, 27th August 2026</td>
+                        </tr>
+                    </table>
+
+                    <button class="view-details-btn" onclick="toggleDetails(this)">View Details</button>
+                    <button class="feedback-btn" onclick="toggleFeedback(this)">⭐ Leave a Review</button>
+
+                    <div class="event-details" style="display:none;">
+                        <table class="event-details-table">
+                            <tr>
+                                <th>Amount</th>
+                                <td>N7,000 (transportation included)</td>
+                            </tr>
+                            <tr>
+                                <th>Dress Code</th>
+                                <td>white shirt and black trouser</td>
+                            </tr>
+                            <tr>
+                                <th>Expected Time of Arrival</th>
+                                <td>9:30 AM</td>
+                            </tr>
+
+                            <tr>
+                                <th>Event Type</th>
+                                <td>Meeting</td>
+                            </tr>
+                            <tr>
+                                <th>Job Type</th>
+                                <td>Event waiters</td>
+                            </tr>
+                            <tr>
+                                <th>Job Description</th>
+                                <td>Serve food to guests in a polite and professional manner. Responsibilities
+                                    include
+                                    replenishing food as needed, clearing used dishes from tables, maintaining
+                                    cleanliness around dining areas, adhering to food safety standards, and
+                                    coordinating
+                                    with the catering team to ensure smooth and timely service.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Staff Used</th>
+                                <td>5</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Feedback Form -->
+                    <div class="feedback-form-wrapper" style="display:none;">
+                        <h3>⭐ Share Your Experience</h3>
+                        <form onsubmit="submitFeedback(event, this)">
+                            <input type="hidden" name="Event" value="Lunch - Ministry of tourism">
+                            <label>Full Name</label>
+                            <input type="text" name="FullName" required placeholder="Enter your full name">
+                            <label>Overall Event Rating</label>
+                            <div class="star-rating">
+                                <input type="radio" id="star5-wed" name="Rating" value="5"><label
+                                    for="star5-wed">★</label>
+                                <input type="radio" id="star4-wed" name="Rating" value="4"><label
+                                    for="star4-wed">★</label>
+                                <input type="radio" id="star3-wed" name="Rating" value="3"><label
+                                    for="star3-wed">★</label>
+                                <input type="radio" id="star2-wed" name="Rating" value="2"><label
+                                    for="star2-wed">★</label>
+                                <input type="radio" id="star1-wed" name="Rating" value="1"><label
+                                    for="star1-wed">★</label>
+                            </div>
+                            <label>Client Rating</label>
+                            <div class="star-rating">
+                                <input type="radio" id="star5-wedc" name="ClientRating" value="5"><label
+                                    for="star5-wedc">★</label>
+                                <input type="radio" id="star4-wedc" name="ClientRating" value="4"><label
+                                    for="star4-wedc">★</label>
+                                <input type="radio" id="star3-wedc" name="ClientRating" value="3"><label
+                                    for="star3-wedc">★</label>
+                                <input type="radio" id="star2-wedc" name="ClientRating" value="2"><label
+                                    for="star2-wedc">★</label>
+                                <input type="radio" id="star1-wedc" name="ClientRating" value="1"><label
+                                    for="star1-wedc">★</label>
+                            </div>
+                            <label>How was the event organised?</label>
+                            <select name="Organisation">
+                                <option value="">-- Select --</option>
+                                <option value="Excellent">Excellent</option>
+                                <option value="Good">Good</option>
+                                <option value="Average">Average</option>
+                                <option value="Poor">Poor</option>
+                            </select>
+                            <label>Was payment made on time?</label>
+                            <select name="PaymentOnTime">
+                                <option value="">-- Select --</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Partially">Partially</option>
+                            </select>
+                            <label>Would you attend this type of event again?</label>
+                            <select name="WouldAttendAgain">
+                                <option value="">-- Select --</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Maybe">Maybe</option>
+                            </select>
+                            <label>Any comments or suggestions?</label>
+                            <textarea name="Comments" placeholder="Share your thoughts..."></textarea>
+                            <button type="submit">Submit Review</button>
+                            <div class="success-message" style="display:none;">✅ Thank you! Your review has been
+                                submitted.</div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <!-- ── Completed Event Thanksgiving Service ── -->
 
                 <div class="event-card completed">
                     <div class="event-title">
